@@ -21,56 +21,76 @@ class HomePage(BasePage):
         ).click()
 
         # Verify that the browser returns to the homepage.
-        self.page.wait_for_url("https://www.gct.com/")
+        self.page.wait_for_url(
+            "https://www.gct.com/",
+            timeout=15000
+        )
 
     def open_special_offers(self):
 
-        # First, handle a promotional popup if it is already visible.
+        # Close the promotional popup if it is already visible.
         self.close_promo_popup()
 
-        # Locate the Special Offers navigation link.
-        special_offer = self.page.get_by_role(
-            "link",
-            name="Special Offers",
-            exact=True
+        # Locate the visible Special Offers navigation link.
+        # Using the href helps avoid selecting an unrelated duplicate link.
+        special_offer = self.page.locator(
+            "a[href*='/special-offers']:visible"
         ).first
 
-        # Wait for the navigation link.
+        # Wait until the navigation link is visible.
         special_offer.wait_for(
             state="visible",
             timeout=15000
         )
 
-        # Try the normal click first.
+        # Check whether we are already on the Special Offers page.
+        if "/special-offers" in self.page.url:
+            print("Already on the Special Offers page.")
+            return
+
+        # Try clicking the navigation link.
         try:
-            special_offer.click(timeout=5000)
+            special_offer.click(timeout=10000)
 
         except PlaywrightTimeoutError:
 
-            # If the click is blocked, check for a delayed popup.
+            # The click may be blocked by a promotional popup.
             print(
-                "Navigation click was blocked. "
+                "Special Offers click timed out. "
                 "Checking for a promotional popup..."
             )
 
-            popup_closed = self.close_promo_popup(
+            # Close the popup if it appears after the first attempt.
+            self.close_promo_popup(
                 wait_timeout=3000
             )
 
-            if not popup_closed:
-                # If no popup was found, allow Playwright to retry.
-                print(
-                    "No promotional popup found. "
-                    "Retrying the navigation click."
+            # Do not click again if the first click already navigated.
+            if "/special-offers" not in self.page.url:
+
+                print("Retrying the Special Offers navigation.")
+
+                special_offer.click(
+                    timeout=15000
                 )
 
-            # Retry the navigation after popup handling.
-            special_offer.click(timeout=10000)
+        # Wait for the Special Offers URL.
+        try:
+            self.page.wait_for_url(
+                "**/special-offers**",
+                timeout=30000
+            )
 
-        # Wait until the Special Offers page opens.
-        self.page.wait_for_url(
-            "**/special-offers**",
-            timeout=15000
+        except PlaywrightTimeoutError:
+
+            # Print the current URL to help identify navigation problems.
+            print(
+                "Special Offers navigation failed. "
+                f"Current URL: {self.page.url}"
+            )
+
+            raise
+
+        print(
+            "Special Offers navigation completed successfully!"
         )
-
-        print("Special Offers navigation completed successfully!")

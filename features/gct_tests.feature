@@ -12,12 +12,6 @@ Feature: GCT Website Testing
     When I click the GCT logo
     Then I should return to the homepage
 
-  @smoke
-  Scenario: TC07 - Verify valid destination search
-    Given the GCT homepage is opened
-    When I search for a valid destination "Europe"
-    Then the Europe destination list should be displayed
-
   @regression
   Scenario: TC03 - Verify Special Offers navigation
     Given the GCT homepage is opened
@@ -30,6 +24,26 @@ Feature: GCT Website Testing
     When I navigate to the Special Offers page
     And I click the browser back button
     Then I should return to the homepage
+  
+
+  @regression
+  Scenario: TC05 - Verify browser forward navigation
+    Given the GCT homepage is opened
+    When I navigate to the Special Offers page
+    And I click the browser back button
+    And I click the browser forward button
+    Then the Special Offers page should be displayed
+
+  @regression
+  Scenario: TC06 - Verify destination search field is visible and enabled
+    Given the GCT homepage is opened
+    Then the destination search field should be visible and enabled
+
+  @smoke
+  Scenario: TC07 - Verify valid destination search
+    Given the GCT homepage is opened
+    When I search for a valid destination "Europe"
+    Then the Europe destination list should be displayed
 
   @regression
   Scenario: TC08 - Verify invalid destination search
@@ -50,7 +64,7 @@ Feature: GCT Website Testing
     Then an intentional test failure should be reported
   
   
-  @regression
+  @regression @TC11
   Scenario: TC11 - Verify login with invalid username/email
     Given the GCT login page is opened
     When I enter invalid login credentials

@@ -40,10 +40,12 @@ class RiverEuropePage(BasePage):
             name="Select Date"
         )
 
-        # Locate Category C cabin.
-        self.category_c_cabin = self.page.get_by_label(
-            "Category C",
-            exact=True
+        # Locate all available "Select Cabins" buttons.
+        # This works even if the website displays Category D, E, F, etc.
+        self.select_cabin_buttons = self.page.get_by_role(
+            "button",
+             name="Select Cabins",
+             exact=True
         )
 
         # TC20: Locate the Next: Trip Extensions button.
@@ -315,57 +317,60 @@ class RiverEuropePage(BasePage):
 
     def verify_cabin_options_displayed(self):
 
-        # Confirm that Category C cabin is visible.
-        expect(self.category_c_cabin).to_be_visible(
-            timeout=15000
-        )
-
-        # Confirm that the Category C text is displayed.
-        expect(
-            self.category_c_cabin.get_by_text(
-                "Category C",
-                exact=True
-            )
-        ).to_be_visible()
-
-        print("Cabin options are displayed successfully!")
-
+      # Dismiss any popup or blocking overlay.
+      self.dismiss_blocking_overlay()
+  
+      # Check that available cabin selection buttons exist.
+      cabin_count = self.select_cabin_buttons.count()
+  
+      # Ensure at least one cabin option is available.
+      assert cabin_count > 0, "No cabin options are displayed!"
+  
+      # Verify that the first cabin option is visible.
+      expect(self.select_cabin_buttons.first).to_be_visible(
+        timeout=15000
+      )
+  
+      print(f"Cabin options displayed successfully! Available options: {cabin_count}")
+   
     # ---------------------------------------------------------
     # TC19: Select Category C cabin.
     # ---------------------------------------------------------
 
     def select_category_c_cabin(self):
 
-        # Dismiss any popup or blocking overlay.
-        self.dismiss_blocking_overlay()
+      # Dismiss any popup or blocking overlay.
+       self.dismiss_blocking_overlay()
 
-        # Locate the Select Cabins option inside Category C.
-        select_cabin = self.category_c_cabin.get_by_text(
-            "Select Cabins",
-            exact=True
-        )
+       # Find all cabin selection buttons currently available.
+       available_cabins = self.select_cabin_buttons
 
-        # Verify that the option is visible.
-        expect(select_cabin).to_be_visible(
-            timeout=15000
-        )
+       # Check how many cabin options are available.
+       cabin_count = available_cabins.count()
 
-        # Select Category C.
-        select_cabin.click(
-            timeout=15000
-        )
+       # Fail the test if no cabin options are available.
+       assert cabin_count > 0, "No available cabin options were displayed!"
 
-        # Verify that the cabin is selected.
-        expect(
-            self.category_c_cabin.get_by_text(
-                "Selected",
-                exact=True
-            )
-        ).to_be_visible(
-            timeout=15000
-        )
+       # Select the first available cabin option.
+       first_cabin = available_cabins.first
 
-        print("Category C cabin selected successfully!")
+       # Make sure the first cabin option is visible.
+       expect(first_cabin).to_be_visible(
+        timeout=15000
+      )
+
+       # Click the first available cabin's Select Cabins button.
+       first_cabin.click(
+        timeout=15000
+      )
+
+       # Verify that the Next: Trip Extensions button becomes enabled.
+       # This indicates that cabin selection has allowed us to proceed.
+       expect(self.next_trip_extensions_button).to_be_enabled(
+        timeout=15000
+      )
+
+       print("Available cabin selected successfully!")
 
     # ---------------------------------------------------------
     # TC20: Navigate to Trip Extensions.
@@ -407,12 +412,17 @@ class RiverEuropePage(BasePage):
             timeout=15000
         )
 
-        # Verify that Amsterdam is unavailable.
+           # Verify that the Amsterdam unavailability message exists.
+        assert self.amsterdam_unavailable_message.count() >= 1, (
+            "Amsterdam unavailability message was not found!"
+          )
+
+          # Verify the first matching message is visible.
         expect(
-            self.amsterdam_unavailable_message
-        ).to_be_visible(
+            self.amsterdam_unavailable_message.first
+            ).to_be_visible(
             timeout=15000
-        )
+            )
 
         print("Trip Extensions page displayed successfully!")
         print("Bruges extension is available!")

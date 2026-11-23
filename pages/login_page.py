@@ -280,3 +280,38 @@ class LoginPage(BasePage):
         )
 
         return True
+
+
+    # =====================================================
+    # EC04 - Login using whitespace-only credentials
+    # =====================================================
+
+    def enter_whitespace_credentials(self):
+
+        # Reuse the existing username method.
+        # It checks whether the field becomes editable before filling.
+        self.enter_username("     ")
+
+        # Reuse the existing password method.
+        # It also handles the field's editability.
+        self.enter_password("     ")
+
+        print("Entered whitespace-only login credentials.")
+
+    def is_password_required_validation_displayed(self):
+        """
+        Check whether the password field is empty
+        and HTML validation considers it required.
+        """
+        return self.password_field.evaluate(
+            "(element) => element.validity.valueMissing"
+        )
+
+    def is_username_required_validation_displayed(self):
+        """
+        Check whether the username field is empty
+        and HTML validation considers it required.
+        """
+        return self.username_field.evaluate(
+            "(element) => element.validity.valueMissing"
+        )

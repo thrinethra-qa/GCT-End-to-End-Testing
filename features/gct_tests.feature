@@ -144,3 +144,46 @@ Feature: GCT Website Testing
     Then the Trip Extensions stage should be displayed
     When I click Next: Pricing Summary
     Then the Pricing Summary page should be displayed
+
+  @edge @regression
+  Scenario: EC01 - Search destination using only spaces
+    Given the user is on the GCT homepage
+    When the user enters only spaces in destination search
+    Then no destination autocomplete suggestions should appear
+
+  @edge @regression
+  Scenario: EC02 - Search destination using special characters
+    Given the user is on the GCT homepage
+    When the user enters special characters in destination search
+    Then the destination search should handle the input without errors
+  
+  @edge @regression
+  Scenario: EC03 - Search destination using an extremely long input
+    Given the user is on the GCT homepage
+    When the user enters an extremely long destination
+    Then the destination search should handle the long input without errors
+
+  @edge @regression
+  Scenario: EC04 - Login using whitespace-only credentials
+    Given the GCT login page is opened
+    When the user enters whitespace-only credentials
+    And the user clicks the login submit button
+    Then the login should be prevented
+
+  @edge @regression
+  Scenario Outline: EC05 - Signup with invalid email formats
+    Given the GCT Registration Lookup page is opened
+    When the user enters an invalid email "<email>"
+    Then the email format should be rejected
+
+  Examples:
+    | email               |
+    | test@               |
+    | @test.com           |
+    | test user@gmail.com |
+
+  @edge @regression
+  Scenario: EC6 - Login with valid-looking username and empty password
+    Given the GCT login page is opened
+    When the user enters a valid-looking username without a password
+    Then the login submit button should be disabled

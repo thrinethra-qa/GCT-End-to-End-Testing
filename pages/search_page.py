@@ -185,3 +185,81 @@ class SearchPage(BasePage):
         ).to_be_visible(timeout=15000)
 
         return self.europe_suggestion.is_visible()
+
+
+    # =====================================================
+    # EC01 - Search destination using only blank spaces
+    # =====================================================
+
+    def search_with_spaces_only(self):
+        # Locate the destination search input.
+        search_box = self.page.locator(
+            "//input[@id='_R_5cn5b_']"
+        )
+
+        # Enter five blank spaces.
+        search_box.fill("     ")
+
+        # Wait briefly for autocomplete results to update.
+        self.page.wait_for_timeout(1500)
+
+    def get_visible_destination_suggestions(self):
+        # Locate the visible autocomplete dropdown.
+        return self.page.locator(
+            "div.scroll-container:visible"
+        )
+
+    def are_destination_suggestions_displayed(self):
+        # Get the autocomplete dropdown.
+        suggestions = self.get_visible_destination_suggestions()
+
+        # Print the number of visible dropdowns for debugging.
+        print(
+            "Visible autocomplete dropdown count:",
+            suggestions.count()
+        )
+
+        # Return True if a dropdown is visible.
+        return suggestions.count() > 0
+
+# =====================================================
+# EC02 - Search destination using special characters
+# =====================================================
+
+    def search_with_special_characters(self):
+
+     # Locate the destination search input.
+     search_box = self.page.locator(
+        "//input[@id='_R_5cn5b_']"
+     )
+
+     # Enter special characters into the search field.
+     search_box.fill("@#$%^&*")
+
+     # Wait briefly for the autocomplete results to update.
+     self.page.wait_for_timeout(1500)
+
+     # Return the current input value for verification.
+     return search_box.input_value()
+# =====================================================
+# EC03 - Search destination using an extremely long input
+# =====================================================
+
+    def search_with_long_input(self):
+
+     # Create a string containing 500 characters.
+     long_destination = "A" * 500
+
+     # Locate the destination search input.
+     search_box = self.page.locator(
+        "//input[@id='_R_5cn5b_']"
+     )
+
+     # Enter the extremely long text.
+     search_box.fill(long_destination)
+
+     # Wait for the autocomplete results to update.
+     self.page.wait_for_timeout(1500)
+
+     # Return the entered value for verification.
+     return search_box.input_value()

@@ -98,3 +98,37 @@ class SignupPage(BasePage):
         )
 
         print("Enter button is disabled for an empty email field!")
+
+    # =====================================================
+    # EC05 - Signup with invalid email formats
+    # =====================================================
+
+    def enter_email_for_validation(self, email):
+
+        # Dismiss any dialog that may block the email field.
+        self.dismiss_blocking_dialog()
+
+        # Locate the email input field.
+        email_field = self.page.locator(self.email_field)
+
+        # Wait until the email field is ready.
+        expect(email_field).to_be_visible(timeout=15000)
+        expect(email_field).to_be_enabled(timeout=10000)
+
+        # Enter the email address to test.
+        email_field.fill(email)
+
+        print(f"Entered email for validation: {email}")
+
+    def is_email_format_valid(self):
+
+        # Locate the email input field.
+        email_field = self.page.locator(self.email_field)
+
+        # Read the browser's built-in HTML email validation result.
+        is_valid = email_field.evaluate(
+            "(element) => element.validity.valid"
+        )
+
+        # Return True if the browser considers the input valid.
+        return is_valid

@@ -504,3 +504,200 @@ def verify_pricing_summary(context):
 
     # Verify that the Pricing Summary page is displayed.
     context.river_europe.verify_pricing_summary_page()
+
+# ============================================================
+# EC01 - Search destination using only blank spaces
+# ============================================================
+@given("the user is on the GCT homepage")
+def step_user_on_gct_homepage(context):
+
+    # Create the HomePage object.
+    context.home = HomePage(context.page)
+
+    # Navigate to the GCT homepage.
+    context.home.open_homepage()
+
+    # Accept cookies if the consent dialog appears.
+    context.home.accept_cookies()
+
+    print("GCT homepage opened successfully.")
+@when("the user enters only spaces in destination search")
+def step_enter_spaces_only(context):
+
+    # Create the SearchPage object using the current browser page.
+    context.search = SearchPage(context.page)
+
+    # Enter five blank spaces into the destination search field.
+    context.search.search_with_spaces_only()
+
+    print("Entered five blank spaces in destination search.")
+
+
+@then("no destination autocomplete suggestions should appear")
+def step_verify_no_destination_suggestions(context):
+
+    # Check whether the autocomplete dropdown is displayed.
+    suggestions_displayed = (
+        context.search.are_destination_suggestions_displayed()
+    )
+
+    # The test passes only when no dropdown is displayed.
+    assert not suggestions_displayed, (
+        "EC01 FAILED: Destination autocomplete suggestions appeared "
+        "after entering only blank spaces."
+    )
+
+    print(
+        "EC01 PASSED: No destination autocomplete suggestions appeared."
+    )
+
+# ============================================================
+# EC02 - Search destination using special characters
+# ============================================================
+
+@when("the user enters special characters in destination search")
+def step_enter_special_characters(context):
+
+    # Create the SearchPage object.
+    context.search = SearchPage(context.page)
+
+    # Enter special characters into the search field.
+    context.search.search_with_special_characters()
+
+    print("Entered special characters in destination search.")
+
+
+@then("the destination search should handle the input without errors")
+def step_verify_special_character_search(context):
+
+    # Read the current value from the search field.
+    actual_value = context.page.locator(
+        "//input[@id='_R_5cn5b_']"
+    ).input_value()
+
+    # Verify that the entered characters remain in the input.
+    assert actual_value == "@#$%^&*", (
+        f"EC02 FAILED: Expected '@#$%^&*' but found '{actual_value}'."
+    )
+
+    print("EC02 PASSED: Special characters were accepted in the search field.")
+
+# ============================================================
+# EC03 - Search destination using an extremely long input
+# ============================================================
+
+@when("the user enters an extremely long destination")
+def step_enter_long_destination(context):
+
+    # Create the SearchPage object.
+    context.search = SearchPage(context.page)
+
+    # Enter 500 characters into the destination search.
+    context.search.search_with_long_input()
+
+    print("Entered 500 characters in destination search.")
+
+
+@then("the destination search should handle the long input without errors")
+def step_verify_long_destination(context):
+
+    # Get the current value from the search input.
+    actual_value = context.page.locator(
+        "//input[@id='_R_5cn5b_']"
+    ).input_value()
+
+    # Verify that all 500 characters were retained.
+    assert len(actual_value) == 500, (
+        f"EC03 FAILED: Expected 500 characters, "
+        f"but found {len(actual_value)}."
+    )
+
+    print(
+        "EC03 PASSED: Search field retained all "
+        f"{len(actual_value)} characters."
+    )
+
+
+# ============================================================
+# EC04 - Login using whitespace-only credentials
+# ============================================================
+
+@when("the user enters whitespace-only credentials")
+def step_enter_whitespace_credentials(context):
+
+    # Reuse the LoginPage object created by the existing Given step.
+    context.login.enter_whitespace_credentials()
+
+
+@when("the user clicks the login submit button")
+def step_click_login_submit(context):
+
+    # Click the existing login Submit button.
+    context.login.click_submit()
+
+
+@then("the login should be prevented")
+def step_verify_whitespace_login(context):
+
+    # Verify that the user remains on the sign-in page.
+    assert "/account/signin" in context.page.url.lower(), (
+        "EC04 FAILED: User navigated away from the sign-in page."
+    )
+
+    print("EC04 PASSED: Login was not successful with whitespace credentials.")
+
+
+# ============================================================
+# EC05 - Signup with invalid email formats
+# ============================================================
+
+@given("the GCT Registration Lookup page is opened")
+def step_open_registration_lookup(context):
+    # Create the SignupPage object.
+    context.signup = SignupPage(context.page)
+
+    # Open the registration lookup page.
+    context.signup.open_registration_lookup_page()
+
+
+@when('the user enters an invalid email "{email}"')
+def step_enter_invalid_email(context, email):
+    # Enter the supplied invalid email address.
+    context.signup.enter_email_for_validation(email)
+
+
+@then("the email format should be rejected")
+def step_verify_invalid_email(context):
+    # Check the browser's built-in email validation.
+    is_valid = context.signup.is_email_format_valid()
+
+    # Invalid email formats should not pass validation.
+    assert not is_valid, (
+        f"EC05 FAILED: Email "
+        f"'{context.page.locator(context.signup.email_field).input_value()}' "
+        "was accepted by the browser's email validation."
+    )
+
+    print("EC05 PASSED: Invalid email format was rejected.")
+
+# ============================================================
+# EC06 - Valid-looking username with empty password
+# ============================================================
+
+@when("the user enters a valid-looking username without a password")
+def step_enter_username_without_password(context):
+
+    # Enter a test username. Leave the password field empty.
+    context.login.enter_username("tester@example.com")
+
+@then("the login submit button should be disabled")
+def step_verify_login_submit_disabled(context):
+
+    # Check whether the Submit button is disabled.
+    is_disabled = context.login.submit_button.is_disabled()
+
+    assert is_disabled, (
+        "EC6 FAILED: Submit button was enabled with an empty password."
+    )
+
+    print("EC6 PASSED: Submit button is disabled when password is empty.")

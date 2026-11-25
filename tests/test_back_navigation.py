@@ -18,5 +18,5 @@ def test_browser_back_navigation(browser_page):
     home.go_back()
 
     # Verify navigation to homepage
-    assert browser_page.url.rstrip("/") == "https://www.gct.com"
+    assert browser_page.url.rstrip("/") == "https://qa.gct.com/"
     print("Browser Back navigation successful!")

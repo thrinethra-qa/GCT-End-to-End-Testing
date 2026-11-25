@@ -12,7 +12,7 @@ class HomePage(BasePage):
 
     def open_homepage(self):
         # Navigate to the GCT homepage.
-        self.navigate("https://www.gct.com/")
+        self.navigate("https://qa.gct.com/")
 
     def click_logo(self):
         # Locate the visible GCT logo and click it.
@@ -22,7 +22,7 @@ class HomePage(BasePage):
 
         # Verify that the browser returns to the homepage.
         self.page.wait_for_url(
-            "https://www.gct.com/",
+            "https://qa.gct.com/",
             timeout=15000
         )
 

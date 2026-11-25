@@ -35,6 +35,11 @@ def navigate_to_special_offers(context):
     # Navigate to the Special Offers page.
     context.home.open_special_offers()
 
+    # Initialize the Special Offers Page Object.
+    context.special_offers = SpecialOffersPage(context.page)
+
+    print("Special Offers Page Object initialized successfully!")
+
 
 @when("I click the GCT logo")
 def click_gct_logo(context):
@@ -51,7 +56,7 @@ def click_browser_back(context):
 
     # Wait until the homepage URL is displayed.
     context.page.wait_for_url(
-        "https://www.gct.com/",
+        "https://qa.gct.com/",
         timeout=15000
     )
 
@@ -68,32 +73,39 @@ def click_browser_forward(context):
         timeout=15000
     )
 
-
 @then("the homepage should load successfully")
 def verify_homepage(context):
 
-    # Verify that the browser is on the GCT homepage.
-    assert context.page.url.rstrip("/") == "https://www.gct.com", (
-        "GCT homepage did not load successfully"
+    # Print the actual URL currently displayed in the browser.
+    print(f"\nDEBUG - Actual homepage URL: {context.page.url}")
+
+    # Define the expected homepage URL.
+    expected_url = "https://qa.gct.com/"
+
+    # Compare the actual URL with the expected URL.
+    assert context.page.url == expected_url, (
+        f"GCT homepage did not load successfully. "
+        f"Expected: {expected_url}, Actual: {context.page.url}"
     )
 
+    print("Homepage loaded successfully!")
 
 @then("I should return to the homepage")
 def verify_homepage_navigation(context):
 
-    # Verify that clicking the logo returns to the homepage.
-    assert context.page.url.rstrip("/") == "https://www.gct.com", (
-        "Browser did not return to the homepage"
+    # Print the actual URL after browser navigation.
+    print(f"Actual URL after navigation: {context.page.url}")
+
+    # Define the expected homepage URL.
+    expected_url = "https://qa.gct.com/"
+
+    # Verify that browser navigation returned to the homepage.
+    assert context.page.url == expected_url, (
+        f"Browser did not return to the homepage. "
+        f"Expected: {expected_url}, Actual: {context.page.url}"
     )
 
-
-@then("the Special Offers page should be displayed")
-def verify_special_offers(context):
-
-    # Verify that the Special Offers URL is displayed.
-    assert "/special-offers" in context.page.url, (
-        "Special Offers page was not displayed"
-    )
+    print("Successfully returned to the homepage!")
 
 
 # =====================================================
@@ -331,10 +343,14 @@ def click_special_offers_navigation(context):
     print("Special Offers navigation completed!")
 
 
+# Match the wording used in the existing feature file.
+@then("the Special Offers page should be displayed")
+
+# Keep support for the original wording as well.
 @then("the Special Offers page should load successfully")
 def verify_special_offers_page(context):
 
-    # Verify the URL and main page content.
+    # Verify that the Special Offers page is displayed.
     context.special_offers.verify_special_offers_page()
 
 

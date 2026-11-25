@@ -30,7 +30,7 @@ class SignupPage(BasePage):
 
     def open_registration_lookup_page(self):
         # Open the GCT Registration Lookup page.
-        self.navigate("https://www.gct.com/account/lookup")
+        self.navigate("https://qa.gct.com/account/lookup")
 
         # Wait until the initial page content loads.
         self.page.wait_for_load_state("domcontentloaded")

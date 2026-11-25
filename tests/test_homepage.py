@@ -5,4 +5,4 @@ def test_open_homepage(browser_page):
 
     home.open_homepage()
 
-    assert "gct.com" in browser_page.url
+    assert "qa.gct.com" in browser_page.url

@@ -23,9 +23,11 @@ class RiverEuropePage(BasePage):
             exact=True
         )
 
-        # TC18: Locate the View dates and prices link.
-        self.view_dates_prices_link = self.page.locator(
-            "xpath=//a[normalize-space()='View dates and prices']"
+        # TC18: Locate the View Dates & Prices link.
+        self.view_dates_prices_link = self.page.get_by_role(
+            "link",
+            name="View Dates & Prices",
+            exact=True
         )
 
         # TC19: Locate the March departure options.
@@ -40,12 +42,11 @@ class RiverEuropePage(BasePage):
             name="Select Date"
         )
 
-        # Locate all available "Select Cabins" buttons.
-        # This works even if the website displays Category D, E, F, etc.
+        # Locate all available Select Cabins buttons.
         self.select_cabin_buttons = self.page.get_by_role(
             "button",
-             name="Select Cabins",
-             exact=True
+            name="Select Cabins",
+            exact=True
         )
 
         # TC20: Locate the Next: Trip Extensions button.
@@ -151,52 +152,19 @@ class RiverEuropePage(BasePage):
 
     # ---------------------------------------------------------
     # TC17: Select Holland & Belgium cruise.
-    # TEMPORARY DIAGNOSTIC: Inspect the blocking popup.
     # ---------------------------------------------------------
 
     def click_holland_belgium_cruise(self):
 
-        # Locate the Black Friday popup dialog.
-        dialog = self.page.locator(
-            '[role="dialog"][aria-describedby="web-popup-description"]'
-        )
+        # Dismiss any popup or blocking overlay.
+        self.dismiss_blocking_overlay()
 
-        # Print popup details if the dialog is displayed.
-        if dialog.is_visible():
-
-            print("\n========== POPUP TEXT ==========")
-            print(dialog.inner_text())
-
-            print("\n========== POPUP BUTTON DETAILS ==========")
-
-            # Find all buttons inside the popup.
-            buttons = dialog.locator("button")
-
-            for index in range(buttons.count()):
-
-                button = buttons.nth(index)
-
-                # Print each button's text and HTML attributes.
-                button_details = button.evaluate(
-                    """element => ({
-                        text: element.innerText,
-                        ariaLabel: element.getAttribute('aria-label'),
-                        title: element.getAttribute('title'),
-                        html: element.outerHTML
-                    })"""
-                )
-
-                print(f"Button {index}: {button_details}")
-
-            print("========== END POPUP DETAILS ==========\n")
-
-        # Wait until the Holland & Belgium link is visible.
+        # Verify that the cruise link is visible.
         expect(self.holland_belgium_link).to_be_visible(
             timeout=15000
         )
 
-        # Attempt the click so the diagnostic output is captured
-        # even if the popup is still blocking the link.
+        # Click the Holland & Belgium cruise link.
         self.holland_belgium_link.click(
             timeout=15000
         )
@@ -209,18 +177,22 @@ class RiverEuropePage(BasePage):
 
     def verify_holland_belgium_overview(self):
 
-        # Verify the cruise title on the overview page.
-        expect(
-            self.page.locator("h1[data-epi-edit='TripTitle']")
-        ).to_contain_text(
-            "Holland & Belgium in Springtime",
+        # Locate the page heading using its accessible role and text.
+        cruise_heading = self.page.get_by_role(
+            "heading",
+            name="Holland & Belgium in Springtime",
+            exact=True
+        )
+
+        # Verify that the cruise heading is visible.
+        expect(cruise_heading).to_be_visible(
             timeout=15000
         )
 
         print("Holland & Belgium cruise overview displayed!")
 
     # ---------------------------------------------------------
-    # TC18: Navigate to View dates and prices.
+    # TC18: Navigate to View Dates & Prices.
     # ---------------------------------------------------------
 
     def click_view_dates_and_prices(self):
@@ -233,12 +205,12 @@ class RiverEuropePage(BasePage):
             timeout=15000
         )
 
-        # Click View dates and prices.
+        # Click View Dates & Prices.
         self.view_dates_prices_link.click(
             timeout=15000
         )
 
-        print("View dates and prices link clicked successfully!")
+        print("View Dates & Prices link clicked successfully!")
 
         # Check for any popup after navigation.
         self.dismiss_blocking_overlay()
@@ -317,60 +289,64 @@ class RiverEuropePage(BasePage):
 
     def verify_cabin_options_displayed(self):
 
-      # Dismiss any popup or blocking overlay.
-      self.dismiss_blocking_overlay()
-  
-      # Check that available cabin selection buttons exist.
-      cabin_count = self.select_cabin_buttons.count()
-  
-      # Ensure at least one cabin option is available.
-      assert cabin_count > 0, "No cabin options are displayed!"
-  
-      # Verify that the first cabin option is visible.
-      expect(self.select_cabin_buttons.first).to_be_visible(
-        timeout=15000
-      )
-  
-      print(f"Cabin options displayed successfully! Available options: {cabin_count}")
-   
+        # Dismiss any popup or blocking overlay.
+        self.dismiss_blocking_overlay()
+
+        # Count the available cabin selection buttons.
+        cabin_count = self.select_cabin_buttons.count()
+
+        # Ensure at least one cabin option is available.
+        assert cabin_count > 0, "No cabin options are displayed!"
+
+        # Verify that the first cabin option is visible.
+        expect(self.select_cabin_buttons.first).to_be_visible(
+            timeout=15000
+        )
+
+        print(
+            f"Cabin options displayed successfully! "
+            f"Available options: {cabin_count}"
+        )
+
     # ---------------------------------------------------------
-    # TC19: Select Category C cabin.
+    # TC19: Select an available cabin.
     # ---------------------------------------------------------
 
     def select_category_c_cabin(self):
 
-      # Dismiss any popup or blocking overlay.
-       self.dismiss_blocking_overlay()
+        # Dismiss any popup or blocking overlay.
+        self.dismiss_blocking_overlay()
 
-       # Find all cabin selection buttons currently available.
-       available_cabins = self.select_cabin_buttons
+        # Find all cabin selection buttons currently available.
+        available_cabins = self.select_cabin_buttons
 
-       # Check how many cabin options are available.
-       cabin_count = available_cabins.count()
+        # Check how many cabin options are available.
+        cabin_count = available_cabins.count()
 
-       # Fail the test if no cabin options are available.
-       assert cabin_count > 0, "No available cabin options were displayed!"
+        # Fail the test if no cabin options are available.
+        assert cabin_count > 0, (
+            "No available cabin options were displayed!"
+        )
 
-       # Select the first available cabin option.
-       first_cabin = available_cabins.first
+        # Select the first available cabin option.
+        first_cabin = available_cabins.first
 
-       # Make sure the first cabin option is visible.
-       expect(first_cabin).to_be_visible(
-        timeout=15000
-      )
+        # Make sure the first cabin option is visible.
+        expect(first_cabin).to_be_visible(
+            timeout=15000
+        )
 
-       # Click the first available cabin's Select Cabins button.
-       first_cabin.click(
-        timeout=15000
-      )
+        # Click the first available cabin's Select Cabins button.
+        first_cabin.click(
+            timeout=15000
+        )
 
-       # Verify that the Next: Trip Extensions button becomes enabled.
-       # This indicates that cabin selection has allowed us to proceed.
-       expect(self.next_trip_extensions_button).to_be_enabled(
-        timeout=15000
-      )
+        # Verify that the Next: Trip Extensions button becomes enabled.
+        expect(self.next_trip_extensions_button).to_be_enabled(
+            timeout=15000
+        )
 
-       print("Available cabin selected successfully!")
+        print("Available cabin selected successfully!")
 
     # ---------------------------------------------------------
     # TC20: Navigate to Trip Extensions.
@@ -412,17 +388,17 @@ class RiverEuropePage(BasePage):
             timeout=15000
         )
 
-           # Verify that the Amsterdam unavailability message exists.
+        # Verify that the Amsterdam unavailability message exists.
         assert self.amsterdam_unavailable_message.count() >= 1, (
             "Amsterdam unavailability message was not found!"
-          )
+        )
 
-          # Verify the first matching message is visible.
+        # Verify that the first matching message is visible.
         expect(
             self.amsterdam_unavailable_message.first
-            ).to_be_visible(
+        ).to_be_visible(
             timeout=15000
-            )
+        )
 
         print("Trip Extensions page displayed successfully!")
         print("Bruges extension is available!")

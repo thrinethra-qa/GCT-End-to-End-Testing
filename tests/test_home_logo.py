@@ -18,5 +18,5 @@ def test_logo_navigation(browser_page):
     home.click_logo()
 
     # Verify homepage navigation
-    assert browser_page.url.rstrip("/") == "https://www.gct.com"
+    assert browser_page.url.rstrip("/") == "https://qa.gct.com/"
     print("GCT logo clicked successfully! Returned to homepage.")

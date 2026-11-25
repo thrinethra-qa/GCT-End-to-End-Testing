@@ -45,7 +45,7 @@ class LoginPage(BasePage):
 
         # Navigate to the GCT login page.
         self.navigate(
-            "https://www.gct.com/account/signin"
+            "https://qa.gct.com/account/signin"
         )
 
         # Wait until the initial page content is loaded.

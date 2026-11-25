@@ -97,40 +97,38 @@ class BasePage:
     # Promotional popup handling
     # ---------------------------------------------------------
 
-    def close_promo_popup(self, wait_timeout=1500):
-        # Locate the known GCT promotional popup form.
-        promo_form = self.page.locator("form#WebPop")
+    
+    def close_promo_popup(self, wait_timeout=3000):
+
+        # Locate the promotional popup using its accessible dialog name.
+        promo_dialog = self.page.get_by_role(
+            "dialog",
+            name="Save up to $3,000"
+        )
 
         try:
-            # Wait briefly for the promotional popup.
-            promo_form.wait_for(
+            # Wait for the popup to appear.
+            promo_dialog.wait_for(
                 state="visible",
                 timeout=wait_timeout
             )
 
-            # Locate the specific close button.
-            close_button = promo_form.locator(
+            # Locate the close button using its unique CSS class.
+            close_button = promo_dialog.locator(
                 "button:has(span.icon-close-rounded)"
             )
 
-            # Use the fallback only if the specific close
-            # button is not present.
-            if close_button.count() == 0:
-                close_button = promo_form.locator(
-                    "button"
-                ).first
-
-            # Make sure the close button is visible.
+            # Verify that the close button is visible.
             close_button.wait_for(
                 state="visible",
-                timeout=3000
+                timeout=5000
             )
 
             # Close the promotional popup.
             close_button.click(timeout=5000)
 
-            # Wait until the promotional form disappears.
-            promo_form.wait_for(
+            # Wait until the popup disappears.
+            promo_dialog.wait_for(
                 state="hidden",
                 timeout=5000
             )
@@ -139,6 +137,7 @@ class BasePage:
             return True
 
         except PlaywrightTimeoutError:
-            # No matching popup or close button was available.
-            print("Promotional popup is not displayed or could not be closed.")
+
+            # The popup may not appear during every test.
+            print("Promotional popup was not displayed.")
             return False

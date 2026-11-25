@@ -12,34 +12,44 @@ def before_all(context):
     # Detect whether tests are running in GitHub Actions.
     context.is_ci = os.getenv("CI", "false").lower() == "true"
 
+    # Get a unique ID for this execution.
+    # The parallel runner will provide run_1, run_2, or run_3.
+    context.run_id = os.getenv("GCT_RUN_ID")
+
+    # Create separate evidence folders for parallel executions.
+    if context.run_id:
+        context.screenshot_dir = Path("parallel-results") / context.run_id / "screenshots"
+        context.video_dir = Path("parallel-results") / context.run_id / "videos"
+    else:
+        # Preserve the existing folders for normal, non-parallel execution.
+        context.screenshot_dir = Path("screenshots")
+        context.video_dir = Path("videos")
+
+    # Create the video folder before launching scenarios.
+    context.video_dir.mkdir(parents=True, exist_ok=True)
+
     # Launch Chromium.
-    # Locally: visible browser.
-    # CI: headless browser.
     context.browser = context.playwright.chromium.launch(
         headless=context.is_ci,
         args=["--start-maximized"] if not context.is_ci else []
     )
 
     print(f"Playwright browser launched successfully! CI mode: {context.is_ci}")
+    print(f"Execution ID: {context.run_id or 'normal_run'}")
 
 
 def before_scenario(context, scenario):
 
     # Create a separate browser context for each scenario.
     if context.is_ci:
-
-        # CI: use a fixed desktop viewport.
         context.browser_context = context.browser.new_context(
             viewport={"width": 1920, "height": 1080},
-            record_video_dir="videos/"
+            record_video_dir=str(context.video_dir)
         )
-
     else:
-
-        # Local: preserve the existing browser window behavior.
         context.browser_context = context.browser.new_context(
             no_viewport=True,
-            record_video_dir="videos/"
+            record_video_dir=str(context.video_dir)
         )
 
     # Create a new page for the current scenario.
@@ -53,11 +63,7 @@ def after_scenario(context, scenario):
     # Save a screenshot when a scenario fails.
     if scenario.status == "failed" and hasattr(context, "page"):
 
-        # Create screenshots folder if it does not exist.
-        Path("screenshots").mkdir(
-            parents=True,
-            exist_ok=True
-        )
+        context.screenshot_dir.mkdir(parents=True, exist_ok=True)
 
         # Create a safe screenshot filename.
         safe_name = "".join(
@@ -65,9 +71,9 @@ def after_scenario(context, scenario):
             for c in scenario.name
         )
 
-        # Capture the failed page.
+        # Capture the failed page in this execution's folder.
         context.page.screenshot(
-            path=f"screenshots/{safe_name}.png",
+            path=str(context.screenshot_dir / f"{safe_name}.png"),
             full_page=True
         )
 

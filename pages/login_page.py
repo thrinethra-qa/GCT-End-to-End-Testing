@@ -1,317 +1,344 @@
 import re
+import time
+from urllib.parse import urlsplit
 
 from pages.base_page import BasePage
 from playwright.sync_api import expect
-from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
+from playwright.sync_api import (
+    TimeoutError as PlaywrightTimeoutError,
+    expect
+)
 
 
 class LoginPage(BasePage):
 
     def __init__(self, page):
-
-        # Initialize the common methods from BasePage.
         super().__init__(page)
 
-        # Locator for the username/email input field.
+        # Login input fields.
         self.username_field = self.page.locator(
             "input[name='signin-username']"
         )
-
-        # Locator for the password input field.
         self.password_field = self.page.locator(
             "input[name='signin-password']"
         )
 
-        # Locator for the Submit button.
+        # Login Submit button.
         self.submit_button = self.page.get_by_role(
-            "button",
-            name="Submit"
+            "button", name="Submit"
         )
 
-        # Locator for the Black Friday promotional popup close button.
-        self.promo_close_button = self.page.locator(
-            "form#WebPop button:has(span.icon-close-rounded)"
-        )
+        # Login network diagnostics.
+        self.login_response_statuses = []
+        self.login_request_failures = 0
+        self._login_response_handler = None
+        self._login_failure_handler = None
 
-        # Locator for the invalid login error message.
-        self.login_error_message = self.page.get_by_text(
-            re.compile(
-                r"Your username or password is incorrect. Please try resetting your username and then password if this persists.",
-                re.IGNORECASE
-            )
-        )
+    # ==========================================
+    # OPEN LOGIN PAGE
+    # ==========================================
 
     def open_login_page(self):
 
-        # Navigate to the GCT login page.
-        self.navigate(
-            "https://qa.gct.com/account/signin"
-        )
+        self.navigate("https://qa.gct.com/account/signin")
 
-        # Wait until the initial page content is loaded.
-        self.page.wait_for_load_state(
-            "domcontentloaded"
-        )
+        # Ensure credentials are entered only on the QA domain.
+        actual_host = urlsplit(self.page.url).hostname
 
-        # Accept cookies if the consent dialog appears.
-        self.accept_cookies()
-
-        # The promotional popup must appear within 30 seconds,
-        # otherwise the test fails.
-        self.wait_and_close_promo_popup()
-
-        # Wait until the username field is visible.
-        expect(
-            self.username_field
-        ).to_be_visible(timeout=15000)
-
-        # Inspect the username field before entering credentials.
-        self.inspect_username_field()
-
-        print("GCT login page opened successfully!")
-
-    def inspect_username_field(self):
-
-        # Read the actual properties of the username field
-        # directly from the browser DOM.
-        field_details = self.username_field.evaluate(
-            """element => ({
-                type: element.type,
-                readOnly: element.readOnly,
-                disabled: element.disabled,
-                value: element.value,
-                outerHTML: element.outerHTML
-            })"""
-        )
-
-        # Print the username field details in the terminal.
-        print("\n========== USERNAME FIELD DETAILS ==========")
-
-        for key, value in field_details.items():
-            print(f"{key}: {value}")
-
-        print("============================================\n")
-
-        # Also check the field using Playwright methods.
-        print(
-            "Username field visible:",
-            self.username_field.is_visible()
-        )
-
-        print(
-            "Username field enabled:",
-            self.username_field.is_enabled()
-        )
-
-        print(
-            "Username field editable:",
-            self.username_field.is_editable()
-        )
-
-    def inspect_field(self, field, label):
-
-        # Print what Playwright finds, without hanging if nothing matches.
-        count = field.count()
-        print(f"\n===== {label}: {count} element(s) found =====")
-
-        if count == 0:
-            print("Locator matched nothing. The locator is probably wrong.")
-            return
-
-        details = field.first.evaluate(
-            """element => ({
-                type: element.type,
-                readOnly: element.readOnly,
-                disabled: element.disabled,
-                outerHTML: element.outerHTML
-            })"""
-        )
-
-        for key, value in details.items():
-            print(f"{key}: {value}")
-
-        print("=========================================\n")
-
-    def wait_and_close_promo_popup(self):
-
-        # Wait up to 30 seconds for the promotional popup to appear.
-        try:
-            self.promo_close_button.wait_for(
-                state="visible",
-                timeout=30000
-            )
-        except PlaywrightTimeoutError:
-            # Fail the test if the popup never appears.
+        if actual_host != "qa.gct.com":
             raise AssertionError(
-                "Promotional popup did not appear within 30 seconds."
+                "Browser redirected away from the GCT QA website."
             )
 
-        # Close the promotional popup.
-        self.promo_close_button.click(
-            timeout=5000
-        )
+        self.page.wait_for_load_state("domcontentloaded")
 
-        # Wait until the popup close button disappears.
-        self.promo_close_button.wait_for(
-            state="hidden",
-            timeout=5000
-        )
+        # Handle cookie consent and promotional popups.
+        self.accept_cookies()
+        print("Cookie consent handling completed.")
 
-        print("Promotional popup closed successfully!")
-
-    def close_promo_popup(self):
-
-        # Lenient check: close the popup only if it appears.
-        try:
-
-            self.promo_close_button.wait_for(
-                state="visible",
-                timeout=3000
-            )
-
-            # Close the promotional popup.
-            self.promo_close_button.click(
-                timeout=5000
-            )
-
-            # Wait until the popup close button disappears.
-            self.promo_close_button.wait_for(
-                state="hidden",
-                timeout=5000
-            )
-
-            print("Promotional popup closed successfully!")
-
-        except PlaywrightTimeoutError:
-
-            # Continue if the promotional popup is not displayed
-            # or its close button is unavailable.
-            print(
-                "Promotional popup is not displayed "
-                "or could not be closed."
-            )
-
-    def enter_username(self, username_value):
-
-        # Close the promotional popup if it appears.
         self.close_promo_popup()
 
-        # Make sure the field is in view.
+        # Wait for the username field.
+        expect(self.username_field).to_be_visible(
+            timeout=15000
+        )
+
+        # Do not apply CSS that hides the entered values.
+        print("GCT login page is ready!")
+
+    # ==========================================
+    # ENTER USERNAME
+    # ==========================================
+
+    def enter_username(self, username):
+
         self.username_field.scroll_into_view_if_needed()
 
-        try:
-            # Auto-retrying check, unlike is_editable().
-            expect(self.username_field).to_be_editable(timeout=5000)
-
-        except AssertionError:
-            # Some sites keep the field readonly until it is focused.
+        if not self.username_field.is_editable():
             self.username_field.click()
 
-            try:
-                expect(self.username_field).to_be_editable(timeout=10000)
-            except AssertionError:
-                self.inspect_username_field()
-                raise AssertionError(
-                    "Username field is still not editable after click. "
-                    "Check readOnly/disabled in the printed field details."
-                )
+            expect(self.username_field).to_be_editable(
+                timeout=10000
+            )
 
-        # Enter the username/email.
-        self.username_field.fill(username_value)
+        self.username_field.fill(username)
 
-        print("Username entered successfully!")
+        # Verify the actual value in the browser field.
+        username_matches = self.username_field.evaluate(
+            "(element, expected) => element.value === expected",
+            username
+        )
 
-    def enter_password(self, password_value):
+        if not username_matches:
+            raise AssertionError(
+                "Username field did not retain the supplied value."
+            )
 
-        # Make sure the field is in view.
+        print("Username field verified; value hidden in logs.")
+
+    # ==========================================
+    # ENTER PASSWORD
+    # ==========================================
+
+    def enter_password(self, password):
+
         self.password_field.scroll_into_view_if_needed()
 
-        try:
-            # Auto-retrying check.
-            expect(self.password_field).to_be_editable(timeout=5000)
-
-        except AssertionError:
-            # Some sites keep the field readonly until it is focused.
+        if not self.password_field.is_editable():
             self.password_field.click()
 
-            try:
-                expect(self.password_field).to_be_editable(timeout=10000)
-            except AssertionError:
-                self.inspect_field(self.password_field, "PASSWORD FIELD")
-                raise AssertionError(
-                    "Password field is not editable. "
-                    "Check the printed PASSWORD FIELD details."
-                )
+            expect(self.password_field).to_be_editable(
+                timeout=10000
+            )
 
-        # Enter the password.
-        self.password_field.fill(password_value)
+        # Type character by character to trigger manual keyboard events.
+        self.password_field.fill("")
+        self.password_field.press_sequentially(
+            password,
+            delay=20
+        )
 
-        print("Password entered successfully!")
+        # Verify the actual value without displaying it.
+        password_matches = self.password_field.evaluate(
+            "(element, expected) => element.value === expected",
+            password
+        )
+
+        if not password_matches:
+            raise AssertionError(
+                "Password field did not retain the supplied value."
+            )
+
+        print("Password field verified; value hidden in logs.")
+
+    # ==========================================
+    # CLICK SUBMIT
+    # ==========================================
 
     def click_submit(self):
 
-        # Show how many Submit buttons the locator matches.
-        self.inspect_field(self.submit_button, "SUBMIT BUTTON")
+        expect(self.submit_button).to_be_enabled(
+            timeout=10000
+        )
 
-        # Use the first match to avoid strict-mode errors
-        # when more than one button is named "Submit".
-        button = self.submit_button.first
-
-        button.scroll_into_view_if_needed()
-
-        # Wait until the button is enabled.
-        expect(button).to_be_enabled(timeout=10000)
-
-        # Click the Submit button.
-        button.click()
+        self.submit_button.click()
 
         print("Login Submit button clicked!")
 
-    def is_login_error_displayed(self):
+    # ==========================================
+    # LOGIN WITH CREDENTIALS
+    # ==========================================
 
+    def login_with_valid_credentials(self, username, password):
 
-        # Verify that the invalid login error message is displayed.
-        expect(
-            self.login_error_message
-        ).to_be_visible(timeout=15000)
-
+        # Safe diagnostics: never print actual credentials.
+        print("Username received:", bool(username))
+        print("Password received:", bool(password))
+        print("Username length:", len(username))
+        print("Password length:", len(password))
         print(
-            "Invalid login error message displayed successfully!"
+            "Username has surrounding spaces:",
+            username != username.strip()
+        )
+        print(
+            "Password has surrounding spaces:",
+            password != password.strip()
         )
 
-        return True
+        # Stop before submission if accidental surrounding spaces exist.
+        if username != username.strip():
+            raise AssertionError(
+                "Username contains leading or trailing spaces."
+            )
 
+        if password != password.strip():
+            raise AssertionError(
+                "Password contains leading or trailing spaces."
+            )
 
-    # =====================================================
-    # EC04 - Login using whitespace-only credentials
-    # =====================================================
+        # Enter and verify both credentials.
+        self.enter_username(username)
+        self.enter_password(password)
 
-    def enter_whitespace_credentials(self):
+        # Start collecting network information before submission.
+        self._start_login_diagnostics()
 
-        # Reuse the existing username method.
-        # It checks whether the field becomes editable before filling.
-        self.enter_username("     ")
+        self.click_submit()
 
-        # Reuse the existing password method.
-        # It also handles the field's editability.
-        self.enter_password("     ")
+        print("Login credentials submitted!")
 
-        print("Entered whitespace-only login credentials.")
+    # ==========================================
+    # START NETWORK DIAGNOSTICS
+    # ==========================================
 
-    def is_password_required_validation_displayed(self):
+    def _start_login_diagnostics(self):
+
+        self.login_response_statuses = []
+        self.login_request_failures = 0
+
+        def is_gct_request(request):
+
+            host = urlsplit(request.url).hostname or ""
+
+            return (
+                host == "gct.com"
+                or host.endswith(".gct.com")
+            )
+
+        def record_response(response):
+
+            if (
+                response.request.method.upper() == "POST"
+                and is_gct_request(response.request)
+            ):
+                self.login_response_statuses.append(
+                    response.status
+                )
+
+        def record_failure(request):
+
+            if (
+                request.method.upper() == "POST"
+                and is_gct_request(request)
+            ):
+                self.login_request_failures += 1
+
+        self._login_response_handler = record_response
+        self._login_failure_handler = record_failure
+
+        self.page.on("response", record_response)
+        self.page.on("requestfailed", record_failure)
+
+    # ==========================================
+    # STOP NETWORK DIAGNOSTICS
+    # ==========================================
+
+    def _stop_login_diagnostics(self):
+
+        if self._login_response_handler is not None:
+
+            self.page.remove_listener(
+                "response",
+                self._login_response_handler
+            )
+
+            self._login_response_handler = None
+
+        if self._login_failure_handler is not None:
+
+            self.page.remove_listener(
+                "requestfailed",
+                self._login_failure_handler
+            )
+
+            self._login_failure_handler = None
+
+    # ==========================================
+    # NETWORK DIAGNOSTIC SUMMARY
+    # ==========================================
+
+    def _login_diagnostic_summary(self):
+
+        if self.login_request_failures:
+
+            network_status = (
+                f"{self.login_request_failures} "
+                "GCT POST request(s) failed."
+            )
+
+        elif self.login_response_statuses:
+
+            statuses = ", ".join(
+                str(status)
+                for status in self.login_response_statuses
+            )
+
+            network_status = (
+                f"GCT POST response status(es): {statuses}."
+            )
+
+        else:
+
+            network_status = (
+                "No completed GCT POST response was observed."
+            )
+
+        if self.page.is_closed():
+            submit_status = "Submit state unavailable; login page is closed."
+        elif self.submit_button.count() == 0:
+            submit_status = "Submit button is not present."
+        else:
+            try:
+                submit_enabled = self.submit_button.is_enabled(
+                    timeout=1000
+                )
+            except PlaywrightTimeoutError:
+                submit_status = "Submit state could not be determined."
+            else:
+                if submit_enabled:
+                    submit_status = "Submit is enabled."
+                else:
+                    submit_status = "Submit is disabled or loading."
+
+        return f"{network_status} {submit_status}"
+
+    # ==========================================
+    # VERIFY SUCCESSFUL LOGIN
+    # ==========================================
+
+    
+    def verify_successful_login(self):
         """
-        Check whether the password field is empty
-        and HTML validation considers it required.
+        Verify successful login using the visible My Account heading.
+        Use the heading role to avoid matching hidden duplicate text.
         """
-        return self.password_field.evaluate(
-            "(element) => element.validity.valueMissing"
-        )
+        try:
+            # Wait until the account overview page is loaded.
+            expect(self.page).to_have_url(
+                re.compile(r".*/my-account/overview/?$"),
+                timeout=20000
+            )
 
-    def is_username_required_validation_displayed(self):
-        """
-        Check whether the username field is empty
-        and HTML validation considers it required.
-        """
-        return self.username_field.evaluate(
-            "(element) => element.validity.valueMissing"
-        )
+            # Locate only the actual visible Welcome heading.
+            welcome_heading = self.page.get_by_role(
+                "heading",
+                name=re.compile(r"^Welcome,\s+\S+$")
+            )
+
+            # Verify that the heading is visible.
+            expect(welcome_heading).to_be_visible(timeout=20000)
+
+            print("Login successful!")
+            print("My Account dashboard verified!")
+
+        except Exception as error:
+            print("Login verification failed.")
+            print("Current URL:", self.page.url)
+            print("Actual error:", repr(error))
+
+            raise AssertionError(
+                f"Login verification failed: {error}"
+            ) from error
+
+        finally:
+            self._stop_login_diagnostics()

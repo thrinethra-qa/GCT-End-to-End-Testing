@@ -1,0 +1,439 @@
+- generic [active] [ref=f4e1]:
+  - generic [ref=f4e3]:
+    - generic [ref=f4e4]:
+      - paragraph [ref=f4e6]: Save up to $3,000 on select 2027 departures
+      - button "Shop Black Friday" [ref=f4e8] [cursor=pointer]
+    - button "Close banner" [ref=f4e9] [cursor=pointer]:
+      - generic [ref=f4e10]: 
+  - banner [ref=f4e11]:
+    - text:        
+    - generic [ref=f4e12]:
+      - generic [ref=f4e13]:
+        - text:   
+        - button " Toggle menu" [ref=f4e16] [cursor=pointer]:
+          - generic [ref=f4e17]: 
+          - generic [ref=f4e18]: Toggle menu
+      - link [ref=f4e20] [cursor=pointer]:
+        - /url: /
+        - img "Logo with text Grand Circle Cruise Line and Grand Circle Travel" [ref=f4e21]
+      - generic [ref=f4e22]:
+        - link "Call us at 1-800-221-2610" [ref=f4e23] [cursor=pointer]:
+          - /url: tel:+1-800-221-2610
+          - generic [ref=f4e24]: 
+        - generic [ref=f4e25]:
+          - text: 
+          - button "Log in" [ref=f4e27] [cursor=pointer]:
+            - generic [ref=f4e28]: 
+  - main [ref=f4e29]:
+    - generic [ref=f4e30]:
+      - heading "Grand Circle Travel & Grand Circle Cruise Line" [level=1] [ref=f4e31]
+      - generic [ref=f4e34]:
+        - button "Pause video" [ref=f4e531] [cursor=pointer]:
+          - generic [ref=f4e532]: 
+        - text:  
+      - generic [ref=f4e41]:
+        - generic [ref=f4e46]:
+          - heading "Find Your Trip" [level=2] [ref=f4e47]
+          - button "Destination" [ref=f4e49] [cursor=pointer]
+          - button "Departure Month" [ref=f4e54] [cursor=pointer]
+          - button "Search for trips" [ref=f4e58] [cursor=pointer]
+        - generic [ref=f4e62]:
+          - heading "Start Planning Your Next Trip" [level=2] [ref=f4e63]
+          - generic [ref=f4e65]:
+            - generic [ref=f4e68]:
+              - tablist [ref=f4e70]:
+                - tab "Rivers of Europe" [selected] [ref=f4e71] [cursor=pointer]
+                - tab "Europe by Land" [ref=f4e72] [cursor=pointer]
+                - tab "Beyond Europe" [ref=f4e73] [cursor=pointer]
+              - text: 
+            - region [ref=f4e78]:
+              - generic [ref=f4e80]:
+                - group [ref=f4e81]:
+                  - generic [ref=f4e85]:
+                    - generic [ref=f4e86]:
+                      - paragraph [ref=f4e87]: River Cruise
+                      - heading [level=3] [ref=f4e88]:
+                        - link "Holland & Belgium in Springtime" [ref=f4e89] [cursor=pointer]:
+                          - /url: /trips/river-cruises/europe/holland-and-belgium-in-springtime
+                      - 'img "Rating: 4.683036 out of 5 stars, based on 224 reviews" [ref=f4e90]':
+                        - generic [aria-hidden] [ref=f4e102]: (224)
+                    - generic:
+                      - paragraph
+                    - paragraph [ref=f4e104]: 12 Days
+                - group [ref=f4e105]:
+                  - generic [ref=f4e109]:
+                    - generic [ref=f4e110]:
+                      - paragraph [ref=f4e111]: River Cruise
+                      - heading [level=3] [ref=f4e112]:
+                        - 'link "The Seine: Paris & the Heart of Normandy" [ref=f4e113] [cursor=pointer]':
+                          - /url: /trips/river-cruises/europe/the-seine-paris-to-normandy
+                      - 'img "Rating: 4.7755103 out of 5 stars, based on 637 reviews" [ref=f4e114]':
+                        - generic [aria-hidden] [ref=f4e126]: (637)
+                    - generic:
+                      - paragraph
+                    - paragraph [ref=f4e128]: 13 Days
+                - group [ref=f4e129]:
+                  - generic [ref=f4e133]:
+                    - generic [ref=f4e134]:
+                      - paragraph [ref=f4e135]: River Cruise
+                      - heading [level=3] [ref=f4e136]:
+                        - link "Eastern Europe to the Black Sea" [ref=f4e137] [cursor=pointer]:
+                          - /url: /trips/river-cruises/europe/eastern-europe-to-the-black-sea
+                      - 'img "Rating: 4.696875 out of 5 stars, based on 640 reviews" [ref=f4e138]':
+                        - generic [aria-hidden] [ref=f4e150]: (640)
+                    - generic:
+                      - paragraph
+                    - paragraph [ref=f4e152]: 14 Days
+                - group [ref=f4e153]:
+                  - generic [ref=f4e157]:
+                    - generic [ref=f4e158]:
+                      - paragraph [ref=f4e159]: River Cruise
+                      - heading [level=3] [ref=f4e160]:
+                        - 'link "Romantic Blue Danube: Budapest, Vienna & Prague" [ref=f4e161] [cursor=pointer]':
+                          - /url: /trips/river-cruises/europe/romantic-blue-danube-budapest-to-prague
+                      - 'img "Rating: 4.7657843 out of 5 stars, based on 491 reviews" [ref=f4e162]':
+                        - generic [aria-hidden] [ref=f4e174]: (491)
+                    - generic:
+                      - paragraph
+                    - paragraph [ref=f4e176]: 15 Days
+              - generic [ref=f4e178]:
+                - button "Previous slide" [disabled]:
+                  - generic: 
+                - generic [ref=f4e179]:
+                  - button "Go to slide 1" [ref=f4e180] [cursor=pointer]
+                  - button "Go to slide 2" [ref=f4e181] [cursor=pointer]
+                  - button "Go to slide 3" [ref=f4e182] [cursor=pointer]
+                - button "Next slide" [ref=f4e183] [cursor=pointer]:
+                  - generic [ref=f4e184]: 
+        - link "Find Your Cruise" [ref=f4e187] [cursor=pointer]:
+          - /url: /marketing/black-friday-solo-deals
+        - article [ref=f4e193]:
+          - heading [level=2] [ref=f4e194]:
+            - strong [ref=f4e195]: Explore By Country
+        - generic [ref=f4e198]:
+          - generic [ref=f4e200]:
+            - img "Scenic mountain landscape in Austria." [ref=f4e204]
+            - generic [ref=f4e205]:
+              - heading [level=3] [ref=f4e206]:
+                - link "Austria" [ref=f4e207] [cursor=pointer]:
+                  - /url: /tripsavailable?c=Austria&tt=River+Cruise%2CLand+Tour
+              - paragraph [ref=f4e208]: 10 Trips
+          - generic [ref=f4e210]:
+            - img "Eiffel Tower and Paris skyline in France." [ref=f4e214]
+            - generic [ref=f4e215]:
+              - heading [level=3] [ref=f4e216]:
+                - link "France" [ref=f4e217] [cursor=pointer]:
+                  - /url: /tripsavailable?c=France&tt=River+Cruise%2CLand+Tour
+              - paragraph [ref=f4e218]: 6 Trips
+          - generic [ref=f4e220]:
+            - img "Historic cityscape with river in Germany." [ref=f4e224]
+            - generic [ref=f4e225]:
+              - heading [level=3] [ref=f4e226]:
+                - link "Germany" [ref=f4e227] [cursor=pointer]:
+                  - /url: /tripsavailable?c=Germany&tt=River+Cruise%2CLand+Tour
+              - paragraph [ref=f4e228]: 15 Trips
+          - generic [ref=f4e230]:
+            - img "Panoramic view of Budapest in Hungary." [ref=f4e234]
+            - generic [ref=f4e235]:
+              - heading [level=3] [ref=f4e236]:
+                - link "Hungary" [ref=f4e237] [cursor=pointer]:
+                  - /url: /tripsavailable?c=Hungary&tt=River+Cruise%2CLand+Tour
+              - paragraph [ref=f4e238]: 6 Trips
+          - generic [ref=f4e240]:
+            - img "Colorful coastal town in Italy." [ref=f4e244]
+            - generic [ref=f4e245]:
+              - heading [level=3] [ref=f4e246]:
+                - link "Italy" [ref=f4e247] [cursor=pointer]:
+                  - /url: /tripsavailable?c=Italy&tt=River+Cruise%2CLand+Tour
+              - paragraph [ref=f4e248]: 5 Trips
+          - generic [ref=f4e250]:
+            - img "Canal lined with historic buildings in the Netherlands." [ref=f4e254]
+            - generic [ref=f4e255]:
+              - heading [level=3] [ref=f4e256]:
+                - link "Netherlands" [ref=f4e257] [cursor=pointer]:
+                  - /url: /tripsavailable?c=Netherlands&tt=River+Cruise%2CLand+Tour
+              - paragraph [ref=f4e258]: 5 Trips
+          - generic [ref=f4e260]:
+            - img "Coastal town and harbor in Portugal." [ref=f4e264]
+            - generic [ref=f4e265]:
+              - heading [level=3] [ref=f4e266]:
+                - link "Portugal" [ref=f4e267] [cursor=pointer]:
+                  - /url: /tripsavailable?c=Portugal&tt=River+Cruise%2CLand+Tour
+              - paragraph [ref=f4e268]: 2 Trips
+          - generic [ref=f4e270]:
+            - img "Historic hillside town in Spain." [ref=f4e274]
+            - generic [ref=f4e275]:
+              - heading [level=3] [ref=f4e276]:
+                - link "Spain" [ref=f4e277] [cursor=pointer]:
+                  - /url: /tripsavailable?c=Spain&tt=River+Cruise%2CLand+Tour
+              - paragraph [ref=f4e278]: 1 Trip
+          - generic [ref=f4e280]:
+            - img "Waterfall and mountain landscape in the United States." [ref=f4e284]
+            - generic [ref=f4e285]:
+              - heading [level=3] [ref=f4e286]:
+                - link "United States" [ref=f4e287] [cursor=pointer]:
+                  - /url: /tripsavailable?c=United+States&tt=River+Cruise%2CLand+Tour
+              - paragraph [ref=f4e288]: 2 Trips
+        - article [ref=f4e290]:
+          - generic [ref=f4e291]:
+            - heading "Why Grand Circle?" [level=2] [ref=f4e292]
+            - generic [ref=f4e293]:
+              - generic [ref=f4e294]:
+                - img "Travelers" [ref=f4e295]
+                - generic [ref=f4e296]:
+                  - strong [ref=f4e298]: 700,000+
+                  - text: Travelers Since 2016
+              - generic [ref=f4e299]:
+                - img "Travelers" [ref=f4e300]
+                - generic [ref=f4e301]:
+                  - strong [ref=f4e302]: Award-Winning
+                  - text: Fleet of River Cruises
+              - generic [ref=f4e303]:
+                - img "Travelers" [ref=f4e304]
+                - generic [ref=f4e305]:
+                  - strong [ref=f4e307]: "68"
+                  - text: Years of Experience
+              - generic [ref=f4e308]:
+                - img "Travelers" [ref=f4e309]
+                - generic [ref=f4e310]:
+                  - strong [ref=f4e311]: Designed for
+                  - text: Smaller Groups
+              - generic [ref=f4e312]:
+                - img "Travelers" [ref=f4e313]
+                - generic [ref=f4e314]:
+                  - strong [ref=f4e316]: 24/7
+                  - text: Support Throughout Your Journey
+              - generic [ref=f4e317]:
+                - img "Travelers" [ref=f4e318]
+                - generic [ref=f4e319]:
+                  - strong [ref=f4e321]: $260M
+                  - text: Donated in Over 70 Countries
+        - article [ref=f4e323]:
+          - link "Phone Have a question? › Speak to our team of experts. Our Travel Counselors are here to support you every step of the way. 1-800-221-2610" [ref=f4e324] [cursor=pointer]:
+            - /url: tel:+18002212610
+            - generic [ref=f4e325]:
+              - generic [ref=f4e326]:
+                - paragraph [ref=f4e327]:
+                  - img "Phone" [ref=f4e328]
+                  - strong [ref=f4e330]: Have a question? ›
+                - paragraph [ref=f4e331]: Speak to our team of experts. Our Travel Counselors are here to support you every step of the way.
+              - generic [ref=f4e332]: 1-800-221-2610
+        - generic:
+          - article
+        - generic [ref=f4e335]:
+          - heading "From Our Inside Scoop Newsletter" [level=2] [ref=f4e336]
+          - generic [ref=f4e337]:
+            - generic [ref=f4e339]:
+              - link "Read More" [ref=f4e340] [cursor=pointer]:
+                - /url: https://qa.oattravel.com/community/the-inside-scoop/trending-topics/black-friday-travel-deals-guide
+              - generic:
+                - 'heading "Complete Guide: Black Friday Deals" [level=5]':
+                  - strong: "Complete Guide: Black Friday Deals"
+                - paragraph: This guide explains what travelers should know about our Black Friday travel promotion.
+                - paragraph:
+                  - link "Read More" [ref=f4e343] [cursor=pointer]:
+                    - /url: https://qa.oattravel.com/community/the-inside-scoop/trending-topics/black-friday-travel-deals-guide
+            - generic [ref=f4e345]:
+              - link "Read More" [ref=f4e346] [cursor=pointer]:
+                - /url: https://qa.oattravel.com/community/the-inside-scoop/trending-topics/trend-2-top-10-bf-teaser
+              - generic:
+                - 'heading "Top 10: Most Popular Journeys for 2027" [level=5]':
+                  - strong: "Top 10: Most Popular Journeys for 2027"
+                - paragraph:
+                  - text: See where our travelers are headed next year on these trending journeys.
+                  - link "Read More" [ref=f4e349] [cursor=pointer]:
+                    - /url: https://qa.oattravel.com/community/the-inside-scoop/trending-topics/trend-2-top-10-bf-teaser
+            - generic [ref=f4e351]:
+              - link "Read More" [ref=f4e352] [cursor=pointer]:
+                - /url: https://qa.oattravel.com/community/the-inside-scoop/on-the-road/lewis-family-safari
+              - generic:
+                - heading "The Lewis Family Safari" [level=5]:
+                  - strong: The Lewis Family Safari
+                - paragraph
+                - paragraph:
+                  - text: Harriet Lewis reflects on why visiting Tanzania with her whole family was “a dream come true.”
+                  - link "Read More" [ref=f4e355] [cursor=pointer]:
+                    - /url: https://qa.oattravel.com/community/the-inside-scoop/on-the-road/lewis-family-safari
+                - paragraph
+        - generic:
+          - article
+        - article [ref=f4e357]:
+          - link [ref=f4e358] [cursor=pointer]:
+            - /url: /grand-circle-difference/awards
+            - generic [ref=f4e359]:
+              - generic [ref=f4e360]:
+                - paragraph [ref=f4e361]:
+                  - strong [ref=f4e363]: See Our Awards ›
+                - paragraph [ref=f4e364]:
+                  - text: Recognized as the leader in small group travel by
+                  - emphasis [ref=f4e365]: Travel + Leisure
+                  - text: ","
+                  - emphasis [ref=f4e366]: Condé Nast Traveler
+                  - text: ","
+                  - emphasis [ref=f4e367]: USA Today
+                  - text: ", and more."
+              - generic [ref=f4e369]:
+                - img "Travel + Leisure World's Best Awards 2026" [ref=f4e370]
+                - img "Award Logo" [ref=f4e371]
+                - img "Condé Nast Traveler Readers' Choice Awards 2025" [ref=f4e372]
+  - contentinfo [ref=f4e374]:
+    - generic [ref=f4e375]:
+      - generic [ref=f4e376]:
+        - generic [ref=f4e377]:
+          - region "Get top deals, the latest news, and more" [ref=f4e379]:
+            - heading "Get top deals, the latest news, and more" [level=2] [ref=f4e380]
+            - generic [ref=f4e383]:
+              - textbox "Email Address" [ref=f4e385]
+              - button "Sign-Up" [ref=f4e386] [cursor=pointer]
+          - generic [ref=f4e387]:
+            - heading "Travel Counselors" [level=2] [ref=f4e388]
+            - list [ref=f4e389]:
+              - listitem [ref=f4e390]:
+                - generic [ref=f4e391]: 
+                - link "1-800-221-2610" [ref=f4e392] [cursor=pointer]:
+                  - /url: tel:1-800-221-2610
+          - generic [ref=f4e393]:
+            - heading "Connect With Us" [level=2] [ref=f4e394]
+            - list [ref=f4e395]:
+              - listitem [ref=f4e396]:
+                - link "icon-facebook-new" [ref=f4e397] [cursor=pointer]:
+                  - /url: https://www.facebook.com/grandcircletravel
+                  - generic [ref=f4e399]:
+                    - generic [ref=f4e400]: 
+                    - text: 
+              - listitem [ref=f4e402]:
+                - link "icon-linkedin-new" [ref=f4e403] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/grand-circle-corporation/posts/
+                  - generic [ref=f4e405]:
+                    - generic [ref=f4e406]: 
+                    - text: 
+        - generic [ref=f4e408]:
+          - generic [ref=f4e409]:
+            - paragraph [ref=f4e410]: River Cruises
+            - list [ref=f4e411]:
+              - listitem [ref=f4e412]:
+                - link "Europe" [ref=f4e413] [cursor=pointer]:
+                  - /url: /tripsavailable?tt=River+Cruise&r=Europe
+              - listitem [ref=f4e415]:
+                - link "European Christmas Cruises" [ref=f4e416] [cursor=pointer]:
+                  - /url: /tripsavailable?q=Christmas+Holiday
+          - generic [ref=f4e418]:
+            - paragraph [ref=f4e419]: Land Tours
+            - list [ref=f4e420]:
+              - listitem [ref=f4e421]:
+                - link "Europe" [ref=f4e422] [cursor=pointer]:
+                  - /url: /tripsavailable?q=Europe&r=Europe&tt=Land+Tour
+              - listitem [ref=f4e424]:
+                - link "North America" [ref=f4e425] [cursor=pointer]:
+                  - /url: /tripsavailable?r=North+America&tt=Land+Tour
+              - listitem [ref=f4e427]:
+                - link "South Pacific" [ref=f4e428] [cursor=pointer]:
+                  - /url: /tripsavailable?r=South+Pacific&tt=Land+Tour
+          - generic [ref=f4e430]:
+            - paragraph [ref=f4e431]: Grand Circle Difference
+            - list [ref=f4e432]:
+              - listitem [ref=f4e433]:
+                - link "Special Offers" [ref=f4e434] [cursor=pointer]:
+                  - /url: /special-offers
+              - listitem [ref=f4e436]:
+                - link "Best Price Guarantee" [ref=f4e437] [cursor=pointer]:
+                  - /url: /ways-to-save/best-price-guarantee
+              - listitem [ref=f4e439]:
+                - link "Refer and Earn" [ref=f4e440] [cursor=pointer]:
+                  - /url: /ways-to-save/refer-and-earn
+              - listitem [ref=f4e442]:
+                - link "Travel Protection Plan" [ref=f4e443] [cursor=pointer]:
+                  - /url: /ways-to-save/travel-protection-plan
+              - listitem [ref=f4e445]:
+                - link "Solo-Friendly Travel" [ref=f4e446] [cursor=pointer]:
+                  - /url: /ways-to-save/solo-traveler
+              - listitem [ref=f4e448]:
+                - link "Group Travel Program" [ref=f4e449] [cursor=pointer]:
+                  - /url: /ways-to-save/travel-free-as-a-group-leader
+              - listitem [ref=f4e451]:
+                - link "Inner Circle" [ref=f4e452] [cursor=pointer]:
+                  - /url: /grand-circle-difference/inner-circle-club
+              - listitem [ref=f4e454]:
+                - link "Grand Circle Foundation" [ref=f4e455] [cursor=pointer]:
+                  - /url: /grand-circle-difference/grand-circle-foundation
+          - generic [ref=f4e457]:
+            - paragraph [ref=f4e458]: Contact Us
+            - list [ref=f4e459]:
+              - listitem [ref=f4e460]:
+                - link "About Us" [ref=f4e461] [cursor=pointer]:
+                  - /url: /about-us
+              - listitem [ref=f4e463]:
+                - link "Reservations & Customer Service" [ref=f4e464] [cursor=pointer]:
+                  - /url: /about-us/contact-us
+              - listitem [ref=f4e466]:
+                - link "Frequently Asked Questions" [ref=f4e467] [cursor=pointer]:
+                  - /url: /faq-home
+              - listitem [ref=f4e469]:
+                - link "People & Culture" [ref=f4e470] [cursor=pointer]:
+                  - /url: /about-us/people-and-culture
+              - listitem [ref=f4e472]:
+                - link "Career Opportunities" [ref=f4e473] [cursor=pointer]:
+                  - /url: /about-us/people-and-culture/careers?q=&o=postedDateDesc&w=&wc=&we=&wpst=
+              - listitem [ref=f4e475]:
+                - link "Media Inquires" [ref=f4e476] [cursor=pointer]:
+                  - /url: /about-us/press--media-resources
+                  - text: Media Inquiries
+              - listitem [ref=f4e478]:
+                - link "Traveler Photo Contest" [ref=f4e479] [cursor=pointer]:
+                  - /url: /community/traveler-photo-contest
+              - listitem [ref=f4e481]:
+                - link "View Digital Catalog" [ref=f4e482] [cursor=pointer]:
+                  - /url: /marketing/sem/rivers-catalog-sign-up
+              - listitem [ref=f4e484]:
+                - link "Travel Updates & Notifications" [ref=f4e485] [cursor=pointer]:
+                  - /url: /marketing/travel-updates
+      - text:       
+    - generic [ref=f4e489]:
+      - generic [ref=f4e490]:
+        - img "Image" [ref=f4e492]
+        - paragraph [ref=f4e493]: 347 Congress St. Boston, MA 02210
+        - paragraph [ref=f4e494]: © 2026 Grand Circle Travel
+        - paragraph [ref=f4e495]: Release Version 3110508222
+      - generic [ref=f4e496]:
+        - heading "Family of Brands" [level=2] [ref=f4e497]
+        - list [ref=f4e498]:
+          - listitem [ref=f4e499]:
+            - link "Overseas Adventure Travel" [ref=f4e500] [cursor=pointer]:
+              - /url: https://qa.oattravel.com/
+      - generic [ref=f4e502]:
+        - generic [ref=f4e503]:
+          - link [ref=f4e504] [cursor=pointer]:
+            - /url: https://www.bbb.org/us/ma/boston/profile/travel-agency/overseas-adventure-travel-0021-3848/accreditation-information
+            - img "Image" [ref=f4e505]
+          - link [ref=f4e506] [cursor=pointer]:
+            - /url: https://ustoa.com/grand-circle
+            - img "Image" [ref=f4e507]
+        - generic [ref=f4e508]:
+          - generic [ref=f4e509]:
+            - link "Terms & Conditions" [ref=f4e510] [cursor=pointer]:
+              - /url: /terms-and-conditions
+            - text: "|"
+          - generic [ref=f4e512]:
+            - link "Privacy Policy" [ref=f4e513] [cursor=pointer]:
+              - /url: /privacy-policy
+            - text: "|"
+          - generic [ref=f4e515]:
+            - link "Your California and Other State Privacy Rights" [ref=f4e516] [cursor=pointer]:
+              - /url: /state-privacy-rights
+            - text: "|"
+          - generic [ref=f4e518]:
+            - link "California Notice at Collection" [ref=f4e519] [cursor=pointer]:
+              - /url: /notice-at-collection
+            - text: "|"
+          - generic [ref=f4e521]:
+            - link "Terms of Use" [ref=f4e522] [cursor=pointer]:
+              - /url: /terms-of-use
+            - text: "|"
+          - generic [ref=f4e524]:
+            - link "Medical Issues & Disabilities" [ref=f4e525] [cursor=pointer]:
+              - /url: /terms-and-conditions#meddicalissues
+            - text: "|"
+          - 'link "CST # 2041626-20" [ref=f4e528] [cursor=pointer]':
+            - /url: /terms-and-conditions#mts
+  - alert [ref=f4e530]
+  - iframe

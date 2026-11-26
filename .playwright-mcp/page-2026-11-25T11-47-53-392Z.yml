@@ -1,0 +1,578 @@
+- generic:
+  - generic [aria-hidden]:
+    - generic:
+      - generic:
+        - generic:
+          - paragraph: Save up to $3,000 on select 2027 departures
+        - generic:
+          - button: Shop Black Friday
+      - button [ref=f8e501] [cursor=pointer]:
+        - generic [ref=f8e10]: 
+  - banner [aria-hidden]:
+    - text:        
+    - generic:
+      - generic:
+        - text:   
+        - generic:
+          - generic:
+            - button:
+              - generic: 
+              - generic: Toggle menu
+      - generic:
+        - link:
+          - /url: /
+      - generic:
+        - link:
+          - /url: tel:+1-800-221-2610
+          - generic: 
+        - generic:
+          - text: 
+          - generic:
+            - button:
+              - generic: 
+  - main:
+    - generic [aria-hidden]:
+      - generic:
+        - generic:
+          - generic:
+            - heading [level=1]: "Rhine River: Canals, Castles & Cultural Treasures"
+            - generic:
+              - generic: New
+              - generic: River Cruise
+            - generic:
+              - generic:
+                - generic: $4,499per person
+                - generic: Includes airfare
+              - button:
+                - generic: Watch Itinerary
+      - generic:
+        - generic:
+          - generic: "Duration:"
+          - generic: 9 Days
+        - generic:
+          - generic: "Activity level:"
+          - generic:
+            - generic: "1"
+            - button
+        - generic:
+          - generic: "Group size:"
+          - generic: Average of 38 travelers
+        - generic:
+          - generic: "Reviews:"
+          - link:
+            - /url: "#reviews"
+            - generic: "0"
+        - generic:
+          - generic: "Single Supplement:"
+          - generic: Low-Cost
+    - generic:
+      - generic [aria-hidden]:
+        - generic:
+          - generic:
+            - navigation:
+              - generic:
+                - generic:
+                  - button:
+                    - generic: Accommodations
+                    - generic: 
+                    - generic: Toggle menu
+                - generic:
+                  - generic:
+                    - button:
+                      - text: "2027"
+                      - generic: 
+                - link:
+                  - /url: /trips/river-cruises/europe/amsterdam-to-frankfurt-river-cruise/availabledatesandprices
+                  - text: View Dates & Prices
+      - generic [aria-hidden]:
+        - generic:
+          - generic:
+            - generic:
+              - region:
+                - heading [level=2]: Overview
+                - generic:
+                  - paragraph:
+                    - text: Unpack once and cruise for
+                    - strong:
+                      - text: seven nights aboard the 162-passenger, privately owned M/S
+                      - emphasis: River Aria
+                    - text: on this
+                    - strong: two-departure-only
+                    - text: Rhine River Cruise. From Amsterdam’s graceful canals, to the World War II history of Arnhem, and the Gothic spires of Cologne Cathedral, discover centuries of history amid vineyard-blanketed hills, storybook villages, and castle-crowned cliffs.
+                - region:
+                  - heading [level=3]: What's Included
+                  - generic:
+                    - list:
+                      - listitem: 7 nights' accommodations aboard our privately owned river ship
+                      - listitem: 20 meals—7 breakfasts, 6 lunches, and 7 dinners, plus all onboard house beer, wine, and soft drinks
+                      - listitem: All transportation and transfers, including port charges
+                      - listitem: International airfare, airport transfers, taxes, fees & fuel surcharges with Grand Circle airfare
+                      - listitem: Services of a local Program Director
+                      - listitem: 12 activities, including an Amsterdam canal cruise and a visit to a family-owned winery in Winningen
+                      - listitem: Gratuities for local guides and drivers
+                - generic:
+                  - button: View Travel Planning Guide
+          - generic:
+            - generic:
+              - button
+              - generic:
+                - paragraph:
+                  - strong: "The Netherlands:"
+                  - text: Amsterdam, Arnhem |
+                  - strong: "Germany:"
+                  - text: Cologne, Koblenz, Mainz, Heidelberg, Frankfurt
+      - region [aria-hidden]:
+        - list:
+          - listitem:
+            - button:
+              - generic:
+                - generic: Play
+                - generic: 2027 Itinerary
+                - generic: 4:05
+      - generic [aria-hidden]:
+        - region:
+          - generic:
+            - heading [level=2]: Accommodations
+            - region:
+              - generic:
+                - generic:
+                  - group:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - heading [level=3]:
+                            - button: M/S River Aria
+                          - paragraph: Privately Owned, 162-passenger Ship
+                        - paragraph: Owned, operated, and staffed by Grand Circle Cruise Line, the M/S River Aria was designed exclusively for four groups of 38-45 travelers.
+      - generic:
+        - generic:
+          - generic:
+            - heading [level=1] [aria-hidden]: Dates and Prices
+            - generic [aria-hidden]:
+              - generic:
+                - generic:
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic: 
+                        - generic: Double Occupancy
+                      - generic: 
+                - generic:
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic: 
+                        - generic: Departure Month
+                      - generic: 
+                - generic:
+                  - generic:
+                    - generic:
+                      - button:
+                        - paragraph:
+                          - generic:
+                            - generic: 
+                            - generic: Newark, NJ(EWR)
+                          - generic: Update
+                  - generic:
+                    - generic:
+                      - generic: 
+                      - text: Include airfare
+                - generic:
+                  - text:  
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic: "Sort By:"
+                        - generic: Date
+                      - generic [aria-hidden]: 
+                  - status: Sort By Date
+            - status:
+              - generic:
+                - generic:
+                  - paragraph: Black Friday Savings
+                - generic:
+                  - generic:
+                    - paragraph:
+                      - generic:
+                        - text: Promotional offers are not reflected in the prices shown. Call
+                        - link "1-800-221-2610":
+                          - /url: tel:+18002212610
+                        - text: to speak with a Travel Counselor for your best available price.
+            - status
+            - generic [aria-hidden]:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - text: Sep 24
+                          - generic: 
+                          - text: Oct 2, 2027
+                    - generic:
+                      - generic:
+                        - generic:
+                          - paragraph: From$4,499 /pp
+                    - generic:
+                      - button:
+                        - generic:
+                          - generic: 
+                          - text: Select
+      - generic [aria-hidden]:
+        - generic:
+          - generic:
+            - heading [level=2]: Itinerary
+            - generic:
+              - generic:
+                - generic:
+                  - button:
+                    - generic: Travel Planning Guide
+                - button: Print Itinerary
+              - generic:
+                - paragraph:
+                  - generic: Departure
+                  - generic: 2027 Itinerary
+                - combobox:
+                  - generic:
+                    - generic: Direction
+                    - generic:
+                      - generic:
+                        - generic: Amsterdam
+                        - generic: to
+                        - generic: Frankfurt
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - heading [level=3]: Depart
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - heading [level=4]: Day 1Depart U.S.
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - heading [level=3]: Amsterdam
+                      - generic:
+                        - paragraph:
+                          - generic: "Hotel:"
+                          - button: M/S River Aria
+                          - generic: (or similar)
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - heading [level=4]: Day 2Arrive in Amsterdam, the Netherlands • Embark ship
+                              - paragraph:
+                                - generic: "Meals included:"
+                                - text: Dinner
+                          - button: View Daily Itinerary
+                        - button
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - heading [level=4]: Day 3Explore Amsterdam • Captain's Welcome Dinner
+                              - paragraph:
+                                - generic: "Meals included:"
+                                - text: Breakfast, Lunch, Dinner
+                          - button: View Daily Itinerary
+                        - button
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - heading [level=3]: Arnhem
+                      - generic:
+                        - paragraph:
+                          - generic: "Hotel:"
+                          - button: M/S River Aria
+                          - generic: (or similar)
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - heading [level=4]: Day 4Discover Arnhem
+                              - paragraph:
+                                - generic: "Meals included:"
+                                - text: Breakfast, Lunch, Dinner
+                          - button: View Daily Itinerary
+                        - button
+              - generic:
+                - button: Show All Days
+      - generic [aria-hidden]:
+        - region:
+          - heading [level=2]: Reviews
+          - generic:
+            - paragraph: No reviews yet Ratings will appear here once travellers share feedback
+  - generic [aria-hidden]:
+    - contentinfo:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - region:
+                - heading [level=2]: Get top deals, the latest news, and more
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - textbox:
+                          - /placeholder: Email Address
+                      - button: Sign-Up
+            - generic:
+              - heading [level=2]: Travel Counselors
+              - list:
+                - listitem:
+                  - generic: 
+                  - link:
+                    - /url: tel:1-800-221-2610
+                    - text: 1-800-221-2610
+            - generic:
+              - heading [level=2]: Connect With Us
+              - list:
+                - listitem:
+                  - link:
+                    - /url: https://www.facebook.com/grandcircletravel
+                    - generic [aria-hidden]:
+                      - generic:
+                        - generic: 
+                        - text: 
+                    - generic: icon-facebook-new
+                - listitem:
+                  - link:
+                    - /url: https://www.linkedin.com/company/grand-circle-corporation/posts/
+                    - generic [aria-hidden]:
+                      - generic:
+                        - generic: 
+                        - text: 
+                    - generic: icon-linkedin-new
+          - generic:
+            - generic:
+              - paragraph: River Cruises
+              - list:
+                - listitem:
+                  - link:
+                    - /url: /tripsavailable?tt=River+Cruise&r=Europe
+                    - text: Europe
+                    - generic: Europe
+                - listitem:
+                  - link:
+                    - /url: /tripsavailable?q=Christmas+Holiday
+                    - text: European Christmas Cruises
+                    - generic: European Christmas Cruises
+            - generic:
+              - paragraph: Land Tours
+              - list:
+                - listitem:
+                  - link:
+                    - /url: /tripsavailable?q=Europe&r=Europe&tt=Land+Tour
+                    - text: Europe
+                    - generic: Europe
+                - listitem:
+                  - link:
+                    - /url: /tripsavailable?r=North+America&tt=Land+Tour
+                    - text: North America
+                    - generic: North America
+                - listitem:
+                  - link:
+                    - /url: /tripsavailable?r=South+Pacific&tt=Land+Tour
+                    - text: South Pacific
+                    - generic: South Pacific
+            - generic:
+              - paragraph: Grand Circle Difference
+              - list:
+                - listitem:
+                  - link:
+                    - /url: /special-offers
+                    - text: Special Offers
+                    - generic: Special Offers
+                - listitem:
+                  - link:
+                    - /url: /ways-to-save/best-price-guarantee
+                    - text: Best Price Guarantee
+                    - generic: Best Price Guarantee
+                - listitem:
+                  - link:
+                    - /url: /ways-to-save/refer-and-earn
+                    - text: Refer and Earn
+                    - generic: Refer and Earn
+                - listitem:
+                  - link:
+                    - /url: /ways-to-save/travel-protection-plan
+                    - text: Travel Protection Plan
+                    - generic: Travel Protection Plan
+                - listitem:
+                  - link:
+                    - /url: /ways-to-save/solo-traveler
+                    - text: Solo-Friendly Travel
+                    - generic: Solo-Friendly Travel
+                - listitem:
+                  - link:
+                    - /url: /ways-to-save/travel-free-as-a-group-leader
+                    - text: Group Travel Program
+                    - generic: Group Travel Program
+                - listitem:
+                  - link:
+                    - /url: /grand-circle-difference/inner-circle-club
+                    - text: Inner Circle
+                    - generic: Inner Circle
+                - listitem:
+                  - link:
+                    - /url: /grand-circle-difference/grand-circle-foundation
+                    - text: Grand Circle Foundation
+                    - generic: Grand Circle Foundation
+            - generic:
+              - paragraph: Contact Us
+              - list:
+                - listitem:
+                  - link:
+                    - /url: /about-us
+                    - text: About Us
+                    - generic: About Us
+                - listitem:
+                  - link:
+                    - /url: /about-us/contact-us
+                    - text: Reservations & Customer Service
+                    - generic: Reservations & Customer Service
+                - listitem:
+                  - link:
+                    - /url: /faq-home
+                    - text: Frequently Asked Questions
+                    - generic: Frequently Asked Questions
+                - listitem:
+                  - link:
+                    - /url: /about-us/people-and-culture
+                    - text: People & Culture
+                    - generic: People & Culture
+                - listitem:
+                  - link:
+                    - /url: /about-us/people-and-culture/careers?q=&o=postedDateDesc&w=&wc=&we=&wpst=
+                    - text: Career Opportunities
+                    - generic: Career Opportunities
+                - listitem:
+                  - link:
+                    - /url: /about-us/press--media-resources
+                    - text: Media Inquiries
+                    - generic: Media Inquires
+                - listitem:
+                  - link:
+                    - /url: /community/traveler-photo-contest
+                    - text: Traveler Photo Contest
+                    - generic: Traveler Photo Contest
+                - listitem:
+                  - link:
+                    - /url: /marketing/sem/rivers-catalog-sign-up
+                    - text: View Digital Catalog
+                    - generic: View Digital Catalog
+                - listitem:
+                  - link:
+                    - /url: /marketing/travel-updates
+                    - text: Travel Updates & Notifications
+                    - generic: Travel Updates & Notifications
+        - text:       
+      - generic:
+        - generic:
+          - generic:
+            - paragraph: 347 Congress St. Boston, MA 02210
+            - paragraph: © 2026 Grand Circle Travel
+            - paragraph: Release Version 3110508222
+          - generic:
+            - heading [level=2]: Family of Brands
+            - list:
+              - listitem:
+                - link:
+                  - /url: https://qa.oattravel.com/
+                  - text: Overseas Adventure Travel
+                  - generic: Overseas Adventure Travel
+          - generic:
+            - generic:
+              - link:
+                - /url: https://www.bbb.org/us/ma/boston/profile/travel-agency/overseas-adventure-travel-0021-3848/accreditation-information
+              - link:
+                - /url: https://ustoa.com/grand-circle
+            - generic:
+              - generic:
+                - link:
+                  - /url: /terms-and-conditions
+                  - text: Terms & Conditions
+                  - generic: Terms & Conditions
+                - text: "|"
+              - generic:
+                - link:
+                  - /url: /privacy-policy
+                  - text: Privacy Policy
+                  - generic: Privacy Policy
+                - text: "|"
+              - generic:
+                - link:
+                  - /url: /state-privacy-rights
+                  - text: Your California and Other State Privacy Rights
+                  - generic: Your California and Other State Privacy Rights
+                - text: "|"
+              - generic:
+                - link:
+                  - /url: /notice-at-collection
+                  - text: California Notice at Collection
+                  - generic: California Notice at Collection
+                - text: "|"
+              - generic:
+                - link:
+                  - /url: /terms-of-use
+                  - text: Terms of Use
+                  - generic: Terms of Use
+                - text: "|"
+              - generic:
+                - link:
+                  - /url: /terms-and-conditions#meddicalissues
+                  - text: Medical Issues & Disabilities
+                  - generic: Medical Issues & Disabilities
+                - text: "|"
+              - generic:
+                - link:
+                  - /url: /terms-and-conditions#mts
+                  - text: "CST # 2041626-20"
+                  - generic: "CST # 2041626-20"
+  - alert
+  - dialog "M/S River Aria" [ref=f8e503]:
+    - generic [ref=f8e504]:
+      - button "Close" [active] [ref=f8e505] [cursor=pointer]
+      - heading "M/S River Aria" [level=2] [ref=f8e508]
+      - generic [ref=f8e510]:
+        - tablist "M/S River Aria" [ref=f8e512]:
+          - tab "Overview" [selected] [ref=f8e513] [cursor=pointer]
+          - tab "Deck Plan & Cabins" [ref=f8e514] [cursor=pointer]
+          - tab "360° View" [ref=f8e515] [cursor=pointer]
+        - tabpanel "Overview" [ref=f8e517]:
+          - generic [ref=f8e518]:
+            - heading [level=2] [ref=f8e519]:
+              - text: M/S
+              - emphasis [ref=f8e520]: River Aria
+            - generic [ref=f8e521]: Privately Owned, 162-passenger Ship
+          - paragraph [ref=f8e523]:
+            - text: Owned, operated, and staffed by Grand Circle Cruise Line, the M/S
+            - emphasis [ref=f8e524]: River Aria
+            - text: was designed exclusively for four groups of 38-45 travelers. This river ship features spacious common areas, including a lounge/bar with inviting couches and soft chairs. Topside, a Sun Deck has classic deck chairs for admiring the passing scenery. Complimentary wireless Internet access is available throughout your ship; connectivity may be limited in certain locations on your itinerary.
+          - list [ref=f8e525]:
+            - listitem [ref=f8e526]:
+              - generic [ref=f8e527]: Weather permitting, relax on our Sun Deck, a book or drink in hand
+            - listitem [ref=f8e528]:
+              - generic [ref=f8e529]: Serenade Deck cabin with balcony and two single beds, one of which is shown here converted to a couch
+            - listitem [ref=f8e530]:
+              - generic [ref=f8e531]: Sonata Deck cabin with picture window and two single beds, one of which is shown here converted to a couch
+            - listitem [ref=f8e532]:
+              - generic [ref=f8e533]: Open-seating dining room
+            - listitem [ref=f8e534]:
+              - generic [ref=f8e535]: Bar & lounge
+            - listitem [ref=f8e536]:
+              - generic [ref=f8e537]: Complimentary bicycle rentals are available onboard your ship for use during free time and include all of the necessary safety gear. Bicycles may be obtained through the Front Desk; your Program Director would be happy to recommend popular routes and places of interest.
+            - listitem [ref=f8e538]:
+              - generic [ref=f8e539]:
+                - text: "Cruise Europe's legendary rivers in comfort aboard your private river ship—owned, operated, and staffed by Grand Circle Cruise Line—which features all outside cabins and spacious common areas. Pictured: M/S"
+                - emphasis [ref=f8e540]: River Adagio

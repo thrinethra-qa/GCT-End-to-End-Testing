@@ -1,96 +1,59 @@
 
-from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
+import re
+
+from playwright.sync_api import expect
 
 from pages.base_page import BasePage
 
 
 class HomePage(BasePage):
-
-    def __init__(self, page):
-        # Initialize common browser methods from BasePage.
-        super().__init__(page)
-
     def open_homepage(self):
-        # Navigate to the GCT homepage.
         self.navigate("https://qa.gct.com/")
 
-    def click_logo(self):
-        # Locate the visible GCT logo and click it.
-        self.page.locator(
-            ".global-header-logo a:visible"
-        ).click()
-
-        # Verify that the browser returns to the homepage.
-        self.page.wait_for_url(
-            "https://qa.gct.com/",
-            timeout=15000
-        )
-
-    def open_special_offers(self):
-
-        # Close the promotional popup if it is already visible.
+    def search_for_europe(self):
+        self.accept_cookies()
         self.close_promo_popup()
 
-        # Locate the visible Special Offers navigation link.
-        # Using the href helps avoid selecting an unrelated duplicate link.
-        special_offer = self.page.locator(
-            "a[href*='/special-offers']:visible"
-        ).first
+        expect(
+            self.page.get_by_role("heading", name="Find Your Trip")
+        ).to_be_visible(timeout=15000)
 
-        # Wait until the navigation link is visible.
-        special_offer.wait_for(
-            state="visible",
-            timeout=15000
+        self.page.get_by_role(
+            "button",
+            name="Destination",
+            exact=True
+        ).click()
+
+        destination_dialog = self.page.get_by_role(
+            "dialog",
+            name="Destination"
         )
+        search_box = destination_dialog.get_by_role(
+            "searchbox",
+            name="Search destinations"
+        )
+        search_box.fill("Europe")
 
-        # Check whether we are already on the Special Offers page.
-        if "/special-offers" in self.page.url:
-            print("Already on the Special Offers page.")
-            return
+        europe_checkbox = destination_dialog.get_by_role(
+            "checkbox",
+            name=re.compile(r"^Europe(?:\s|$)")
+        )
+        if not europe_checkbox.is_checked():
+            europe_checkbox.check()
 
-        # Try clicking the navigation link.
-        try:
-            special_offer.click(timeout=10000)
+        destination_dialog.get_by_role(
+            "button",
+            name="Apply",
+            exact=True
+        ).click()
 
-        except PlaywrightTimeoutError:
+        self.page.get_by_role(
+            "button",
+            name="Search for trips",
+            exact=True
+        ).click()
 
-            # The click may be blocked by a promotional popup.
-            print(
-                "Special Offers click timed out. "
-                "Checking for a promotional popup..."
-            )
-
-            # Close the popup if it appears after the first attempt.
-            self.close_promo_popup(
-                wait_timeout=3000
-            )
-
-            # Do not click again if the first click already navigated.
-            if "/special-offers" not in self.page.url:
-
-                print("Retrying the Special Offers navigation.")
-
-                special_offer.click(
-                    timeout=15000
-                )
-
-        # Wait for the Special Offers URL.
-        try:
-            self.page.wait_for_url(
-                "**/special-offers**",
-                timeout=30000
-            )
-
-        except PlaywrightTimeoutError:
-
-            # Print the current URL to help identify navigation problems.
-            print(
-                "Special Offers navigation failed. "
-                f"Current URL: {self.page.url}"
-            )
-
-            raise
-
-        print(
-            "Special Offers navigation completed successfully!"
+        expect(self.page).to_have_url(
+            re.compile(r"/tripsavailable"),
+            timeout=30000
         )

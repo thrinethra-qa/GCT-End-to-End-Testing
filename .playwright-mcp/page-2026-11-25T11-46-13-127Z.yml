@@ -1,0 +1,1035 @@
+- generic [ref=f4e1]:
+  - generic [ref=f4e3]:
+    - generic [ref=f4e4]:
+      - paragraph [ref=f4e6]: Save up to $3,000 on select 2027 departures
+      - button "Shop Black Friday" [ref=f4e8] [cursor=pointer]
+    - button "Close banner" [ref=f4e9] [cursor=pointer]:
+      - generic [ref=f4e10]: 
+  - banner [ref=f4e11]:
+    - text:        
+    - generic [ref=f4e12]:
+      - generic [ref=f4e13]:
+        - text:   
+        - button " Toggle menu" [ref=f4e16] [cursor=pointer]:
+          - generic [ref=f4e17]: 
+          - generic [ref=f4e18]: Toggle menu
+      - link [ref=f4e20] [cursor=pointer]:
+        - /url: /
+        - img "Logo with text Grand Circle Cruise Line and Grand Circle Travel" [ref=f4e21]
+      - generic [ref=f4e22]:
+        - link "Call us at 1-800-221-2610" [ref=f4e23] [cursor=pointer]:
+          - /url: tel:+1-800-221-2610
+          - generic [ref=f4e24]: 
+        - generic [ref=f4e25]:
+          - text: 
+          - button "Log in" [ref=f4e27] [cursor=pointer]:
+            - generic [ref=f4e28]: 
+  - main [ref=f4e29]:
+    - generic [ref=f4e30]:
+      - heading "Grand Circle Travel & Grand Circle Cruise Line" [level=1] [ref=f4e31]
+      - generic [ref=f4e34]:
+        - button "Pause video" [ref=f4e40] [cursor=pointer]:
+          - generic [ref=f4e41]: 
+        - text:  
+      - generic [ref=f4e43]:
+        - generic [ref=f4e48]:
+          - heading "Find Your Trip" [level=2] [ref=f4e49]
+          - generic [ref=f4e50]:
+            - button "Destination" [expanded] [ref=f4e51] [cursor=pointer]:
+              - img "Clear destinations" [ref=f4e1251]
+            - dialog "Destination" [ref=f4e534]:
+              - searchbox "Search destinations" [ref=f4e537]
+              - list "Destination" [ref=f4e540]:
+                - listitem [ref=f4e541]:
+                  - generic [ref=f4e542] [cursor=pointer]:
+                    - checkbox "Africa 17 trips" [ref=f4e544]
+                    - generic [ref=f4e545]: Africa
+                    - generic "17 trips" [ref=f4e546]: "17"
+                - listitem [ref=f4e547]:
+                  - generic [ref=f4e548] [cursor=pointer]:
+                    - checkbox "Albania 4 trips" [ref=f4e550]
+                    - generic [ref=f4e551]: Albania
+                    - generic "4 trips" [ref=f4e552]: "4"
+                - listitem [ref=f4e553]:
+                  - generic [ref=f4e554] [cursor=pointer]:
+                    - checkbox "Algeria 2 trips" [ref=f4e556]
+                    - generic [ref=f4e557]: Algeria
+                    - generic "2 trips" [ref=f4e558]: "2"
+                - listitem [ref=f4e559]:
+                  - generic [ref=f4e560] [cursor=pointer]:
+                    - checkbox "Antarctica 2 trips" [ref=f4e562]
+                    - generic [ref=f4e563]: Antarctica
+                    - generic "2 trips" [ref=f4e564]: "2"
+                - listitem [ref=f4e565]:
+                  - generic [ref=f4e566] [cursor=pointer]:
+                    - checkbox "Argentina 9 trips" [ref=f4e568]
+                    - generic [ref=f4e569]: Argentina
+                    - generic "9 trips" [ref=f4e570]: "9"
+                - listitem [ref=f4e571]:
+                  - generic [ref=f4e572] [cursor=pointer]:
+                    - checkbox "Armenia 1 trips" [ref=f4e574]
+                    - generic [ref=f4e575]: Armenia
+                    - generic "1 trips" [ref=f4e576]: "1"
+                - listitem [ref=f4e577]:
+                  - generic [ref=f4e578] [cursor=pointer]:
+                    - checkbox "Asia 20 trips" [ref=f4e580]
+                    - generic [ref=f4e581]: Asia
+                    - generic "20 trips" [ref=f4e582]: "20"
+                - listitem [ref=f4e583]:
+                  - generic [ref=f4e584] [cursor=pointer]:
+                    - checkbox "Australia 4 trips" [ref=f4e586]
+                    - generic [ref=f4e587]: Australia
+                    - generic "4 trips" [ref=f4e588]: "4"
+                - listitem [ref=f4e589]:
+                  - generic [ref=f4e590] [cursor=pointer]:
+                    - checkbox "Austria 13 trips" [ref=f4e592]
+                    - generic [ref=f4e593]: Austria
+                    - generic "13 trips" [ref=f4e594]: "13"
+                - listitem [ref=f4e595]:
+                  - generic [ref=f4e596] [cursor=pointer]:
+                    - checkbox "Azerbaijan 2 trips" [ref=f4e598]
+                    - generic [ref=f4e599]: Azerbaijan
+                    - generic "2 trips" [ref=f4e600]: "2"
+                - listitem [ref=f4e601]:
+                  - generic [ref=f4e602] [cursor=pointer]:
+                    - checkbox "Bali 1 trips" [ref=f4e604]
+                    - generic [ref=f4e605]: Bali
+                    - generic "1 trips" [ref=f4e606]: "1"
+                - listitem [ref=f4e607]:
+                  - generic [ref=f4e608] [cursor=pointer]:
+                    - checkbox "Belgium 10 trips" [ref=f4e610]
+                    - generic [ref=f4e611]: Belgium
+                    - generic "10 trips" [ref=f4e612]: "10"
+                - listitem [ref=f4e613]:
+                  - generic [ref=f4e614] [cursor=pointer]:
+                    - checkbox "Belize 1 trips" [ref=f4e616]
+                    - generic [ref=f4e617]: Belize
+                    - generic "1 trips" [ref=f4e618]: "1"
+                - listitem [ref=f4e619]:
+                  - generic [ref=f4e620] [cursor=pointer]:
+                    - checkbox "Bhutan 3 trips" [ref=f4e622]
+                    - generic [ref=f4e623]: Bhutan
+                    - generic "3 trips" [ref=f4e624]: "3"
+                - listitem [ref=f4e625]:
+                  - generic [ref=f4e626] [cursor=pointer]:
+                    - checkbox "Bolivia 2 trips" [ref=f4e628]
+                    - generic [ref=f4e629]: Bolivia
+                    - generic "2 trips" [ref=f4e630]: "2"
+                - listitem [ref=f4e631]:
+                  - generic [ref=f4e632] [cursor=pointer]:
+                    - checkbox "Bosnia and Herzegovina 2 trips" [ref=f4e634]
+                    - generic [ref=f4e635]: Bosnia and Herzegovina
+                    - generic "2 trips" [ref=f4e636]: "2"
+                - listitem [ref=f4e637]:
+                  - generic [ref=f4e638] [cursor=pointer]:
+                    - checkbox "Botswana 2 trips" [ref=f4e640]
+                    - generic [ref=f4e641]: Botswana
+                    - generic "2 trips" [ref=f4e642]: "2"
+                - listitem [ref=f4e643]:
+                  - generic [ref=f4e644] [cursor=pointer]:
+                    - checkbox "Brazil 7 trips" [ref=f4e646]
+                    - generic [ref=f4e647]: Brazil
+                    - generic "7 trips" [ref=f4e648]: "7"
+                - listitem [ref=f4e649]:
+                  - generic [ref=f4e650] [cursor=pointer]:
+                    - checkbox "Bulgaria 3 trips" [ref=f4e652]
+                    - generic [ref=f4e653]: Bulgaria
+                    - generic "3 trips" [ref=f4e654]: "3"
+                - listitem [ref=f4e655]:
+                  - generic [ref=f4e656] [cursor=pointer]:
+                    - checkbox "Cambodia 4 trips" [ref=f4e658]
+                    - generic [ref=f4e659]: Cambodia
+                    - generic "4 trips" [ref=f4e660]: "4"
+                - listitem [ref=f4e661]:
+                  - generic [ref=f4e662] [cursor=pointer]:
+                    - checkbox "Canada 2 trips" [ref=f4e664]
+                    - generic [ref=f4e665]: Canada
+                    - generic "2 trips" [ref=f4e666]: "2"
+                - listitem [ref=f4e667]:
+                  - generic [ref=f4e668] [cursor=pointer]:
+                    - checkbox "Cape Verde 1 trips" [ref=f4e670]
+                    - generic [ref=f4e671]: Cape Verde
+                    - generic "1 trips" [ref=f4e672]: "1"
+                - listitem [ref=f4e673]:
+                  - generic [ref=f4e674] [cursor=pointer]:
+                    - checkbox "Central & Southern Italy 1 trips" [ref=f4e676]
+                    - generic [ref=f4e677]: Central & Southern Italy
+                    - generic "1 trips" [ref=f4e678]: "1"
+                - listitem [ref=f4e679]:
+                  - generic [ref=f4e680] [cursor=pointer]:
+                    - checkbox "Central America 5 trips" [ref=f4e682]
+                    - generic [ref=f4e683]: Central America
+                    - generic "5 trips" [ref=f4e684]: "5"
+                - listitem [ref=f4e685]:
+                  - generic [ref=f4e686] [cursor=pointer]:
+                    - checkbox "Chile 6 trips" [ref=f4e688]
+                    - generic [ref=f4e689]: Chile
+                    - generic "6 trips" [ref=f4e690]: "6"
+                - listitem [ref=f4e691]:
+                  - generic [ref=f4e692] [cursor=pointer]:
+                    - checkbox "China 2 trips" [ref=f4e694]
+                    - generic [ref=f4e695]: China
+                    - generic "2 trips" [ref=f4e696]: "2"
+                - listitem [ref=f4e697]:
+                  - generic [ref=f4e698] [cursor=pointer]:
+                    - checkbox "Colombia 2 trips" [ref=f4e700]
+                    - generic [ref=f4e701]: Colombia
+                    - generic "2 trips" [ref=f4e702]: "2"
+                - listitem [ref=f4e703]:
+                  - generic [ref=f4e704] [cursor=pointer]:
+                    - checkbox "Costa Rica 4 trips" [ref=f4e706]
+                    - generic [ref=f4e707]: Costa Rica
+                    - generic "4 trips" [ref=f4e708]: "4"
+                - listitem [ref=f4e709]:
+                  - generic [ref=f4e710] [cursor=pointer]:
+                    - checkbox "Croatia 7 trips" [ref=f4e712]
+                    - generic [ref=f4e713]: Croatia
+                    - generic "7 trips" [ref=f4e714]: "7"
+                - listitem [ref=f4e715]:
+                  - generic [ref=f4e716] [cursor=pointer]:
+                    - checkbox "Czech Republic 6 trips" [ref=f4e718]
+                    - generic [ref=f4e719]: Czech Republic
+                    - generic "6 trips" [ref=f4e720]: "6"
+                - listitem [ref=f4e721]:
+                  - generic [ref=f4e722] [cursor=pointer]:
+                    - checkbox "Denmark 7 trips" [ref=f4e724]
+                    - generic [ref=f4e725]: Denmark
+                    - generic "7 trips" [ref=f4e726]: "7"
+                - listitem [ref=f4e727]:
+                  - generic [ref=f4e728] [cursor=pointer]:
+                    - checkbox "Ecuador 4 trips" [ref=f4e730]
+                    - generic [ref=f4e731]: Ecuador
+                    - generic "4 trips" [ref=f4e732]: "4"
+                - listitem [ref=f4e733]:
+                  - generic [ref=f4e734] [cursor=pointer]:
+                    - checkbox "Egypt 4 trips" [ref=f4e736]
+                    - generic [ref=f4e737]: Egypt
+                    - generic "4 trips" [ref=f4e738]: "4"
+                - listitem [ref=f4e739]:
+                  - generic [ref=f4e740] [cursor=pointer]:
+                    - checkbox "El Salvador 3 trips" [ref=f4e742]
+                    - generic [ref=f4e743]: El Salvador
+                    - generic "3 trips" [ref=f4e744]: "3"
+                - listitem [ref=f4e745]:
+                  - generic [ref=f4e746] [cursor=pointer]:
+                    - checkbox "England 5 trips" [ref=f4e748]
+                    - generic [ref=f4e749]: England
+                    - generic "5 trips" [ref=f4e750]: "5"
+                - listitem [ref=f4e751]:
+                  - generic [ref=f4e752] [cursor=pointer]:
+                    - checkbox "Estonia 2 trips" [ref=f4e754]
+                    - generic [ref=f4e755]: Estonia
+                    - generic "2 trips" [ref=f4e756]: "2"
+                - listitem [ref=f4e757]:
+                  - generic [ref=f4e758] [cursor=pointer]:
+                    - checkbox "Ethiopia 1 trips" [ref=f4e760]
+                    - generic [ref=f4e761]: Ethiopia
+                    - generic "1 trips" [ref=f4e762]: "1"
+                - listitem [ref=f4e763]:
+                  - generic [ref=f4e764] [cursor=pointer]:
+                    - checkbox "Europe 93 trips" [checked] [active] [ref=f4e766]
+                    - generic [ref=f4e767]: Europe
+                    - generic "93 trips" [ref=f4e768]: "93"
+                - listitem [ref=f4e769]:
+                  - generic [ref=f4e770] [cursor=pointer]:
+                    - checkbox "Fiji 1 trips" [ref=f4e772]
+                    - generic [ref=f4e773]: Fiji
+                    - generic "1 trips" [ref=f4e774]: "1"
+                - listitem [ref=f4e775]:
+                  - generic [ref=f4e776] [cursor=pointer]:
+                    - checkbox "Finland 5 trips" [ref=f4e778]
+                    - generic [ref=f4e779]: Finland
+                    - generic "5 trips" [ref=f4e780]: "5"
+                - listitem [ref=f4e781]:
+                  - generic [ref=f4e782] [cursor=pointer]:
+                    - checkbox "France 16 trips" [ref=f4e784]
+                    - generic [ref=f4e785]: France
+                    - generic "16 trips" [ref=f4e786]: "16"
+                - listitem [ref=f4e787]:
+                  - generic [ref=f4e788] [cursor=pointer]:
+                    - checkbox "Georgia 1 trips" [ref=f4e790]
+                    - generic [ref=f4e791]: Georgia
+                    - generic "1 trips" [ref=f4e792]: "1"
+                - listitem [ref=f4e793]:
+                  - generic [ref=f4e794] [cursor=pointer]:
+                    - checkbox "Germany 19 trips" [ref=f4e796]
+                    - generic [ref=f4e797]: Germany
+                    - generic "19 trips" [ref=f4e798]: "19"
+                - listitem [ref=f4e799]:
+                  - generic [ref=f4e800] [cursor=pointer]:
+                    - checkbox "Greece 9 trips" [ref=f4e802]
+                    - generic [ref=f4e803]: Greece
+                    - generic "9 trips" [ref=f4e804]: "9"
+                - listitem [ref=f4e805]:
+                  - generic [ref=f4e806] [cursor=pointer]:
+                    - checkbox "Greenland 2 trips" [ref=f4e808]
+                    - generic [ref=f4e809]: Greenland
+                    - generic "2 trips" [ref=f4e810]: "2"
+                - listitem [ref=f4e811]:
+                  - generic [ref=f4e812] [cursor=pointer]:
+                    - checkbox "Guatemala 3 trips" [ref=f4e814]
+                    - generic [ref=f4e815]: Guatemala
+                    - generic "3 trips" [ref=f4e816]: "3"
+                - listitem [ref=f4e817]:
+                  - generic [ref=f4e818] [cursor=pointer]:
+                    - checkbox "Honduras 1 trips" [ref=f4e820]
+                    - generic [ref=f4e821]: Honduras
+                    - generic "1 trips" [ref=f4e822]: "1"
+                - listitem [ref=f4e823]:
+                  - generic [ref=f4e824] [cursor=pointer]:
+                    - checkbox "Hungary 7 trips" [ref=f4e826]
+                    - generic [ref=f4e827]: Hungary
+                    - generic "7 trips" [ref=f4e828]: "7"
+                - listitem [ref=f4e829]:
+                  - generic [ref=f4e830] [cursor=pointer]:
+                    - checkbox "Iceland 3 trips" [ref=f4e832]
+                    - generic [ref=f4e833]: Iceland
+                    - generic "3 trips" [ref=f4e834]: "3"
+                - listitem [ref=f4e835]:
+                  - generic [ref=f4e836] [cursor=pointer]:
+                    - checkbox "India 4 trips" [ref=f4e838]
+                    - generic [ref=f4e839]: India
+                    - generic "4 trips" [ref=f4e840]: "4"
+                - listitem [ref=f4e841]:
+                  - generic [ref=f4e842] [cursor=pointer]:
+                    - checkbox "Indonesia 1 trips" [ref=f4e844]
+                    - generic [ref=f4e845]: Indonesia
+                    - generic "1 trips" [ref=f4e846]: "1"
+                - listitem [ref=f4e847]:
+                  - generic [ref=f4e848] [cursor=pointer]:
+                    - checkbox "Ireland 5 trips" [ref=f4e850]
+                    - generic [ref=f4e851]: Ireland
+                    - generic "5 trips" [ref=f4e852]: "5"
+                - listitem [ref=f4e853]:
+                  - generic [ref=f4e854] [cursor=pointer]:
+                    - checkbox "Isle of Man 1 trips" [ref=f4e856]
+                    - generic [ref=f4e857]: Isle of Man
+                    - generic "1 trips" [ref=f4e858]: "1"
+                - listitem [ref=f4e859]:
+                  - generic [ref=f4e860] [cursor=pointer]:
+                    - checkbox "Israel 1 trips" [ref=f4e862]
+                    - generic [ref=f4e863]: Israel
+                    - generic "1 trips" [ref=f4e864]: "1"
+                - listitem [ref=f4e865]:
+                  - generic [ref=f4e866] [cursor=pointer]:
+                    - checkbox "Italy 27 trips" [ref=f4e868]
+                    - generic [ref=f4e869]: Italy
+                    - generic "27 trips" [ref=f4e870]: "27"
+                - listitem [ref=f4e871]:
+                  - generic [ref=f4e872] [cursor=pointer]:
+                    - checkbox "Japan 4 trips" [ref=f4e874]
+                    - generic [ref=f4e875]: Japan
+                    - generic "4 trips" [ref=f4e876]: "4"
+                - listitem [ref=f4e877]:
+                  - generic [ref=f4e878] [cursor=pointer]:
+                    - checkbox "Java 1 trips" [ref=f4e880]
+                    - generic [ref=f4e881]: Java
+                    - generic "1 trips" [ref=f4e882]: "1"
+                - listitem [ref=f4e883]:
+                  - generic [ref=f4e884] [cursor=pointer]:
+                    - checkbox "Jordan 2 trips" [ref=f4e886]
+                    - generic [ref=f4e887]: Jordan
+                    - generic "2 trips" [ref=f4e888]: "2"
+                - listitem [ref=f4e889]:
+                  - generic [ref=f4e890] [cursor=pointer]:
+                    - checkbox "Kazakhstan 1 trips" [ref=f4e892]
+                    - generic [ref=f4e893]: Kazakhstan
+                    - generic "1 trips" [ref=f4e894]: "1"
+                - listitem [ref=f4e895]:
+                  - generic [ref=f4e896] [cursor=pointer]:
+                    - checkbox "Kenya 4 trips" [ref=f4e898]
+                    - generic [ref=f4e899]: Kenya
+                    - generic "4 trips" [ref=f4e900]: "4"
+                - listitem [ref=f4e901]:
+                  - generic [ref=f4e902] [cursor=pointer]:
+                    - checkbox "Kyrgyzstan 1 trips" [ref=f4e904]
+                    - generic [ref=f4e905]: Kyrgyzstan
+                    - generic "1 trips" [ref=f4e906]: "1"
+                - listitem [ref=f4e907]:
+                  - generic [ref=f4e908] [cursor=pointer]:
+                    - checkbox "Laos 1 trips" [ref=f4e910]
+                    - generic [ref=f4e911]: Laos
+                    - generic "1 trips" [ref=f4e912]: "1"
+                - listitem [ref=f4e913]:
+                  - generic [ref=f4e914] [cursor=pointer]:
+                    - checkbox "Latvia 2 trips" [ref=f4e916]
+                    - generic [ref=f4e917]: Latvia
+                    - generic "2 trips" [ref=f4e918]: "2"
+                - listitem [ref=f4e919]:
+                  - generic [ref=f4e920] [cursor=pointer]:
+                    - checkbox "Lithuania 1 trips" [ref=f4e922]
+                    - generic [ref=f4e923]: Lithuania
+                    - generic "1 trips" [ref=f4e924]: "1"
+                - listitem [ref=f4e925]:
+                  - generic [ref=f4e926] [cursor=pointer]:
+                    - checkbox "Madagascar 2 trips" [ref=f4e928]
+                    - generic [ref=f4e929]: Madagascar
+                    - generic "2 trips" [ref=f4e930]: "2"
+                - listitem [ref=f4e931]:
+                  - generic [ref=f4e932] [cursor=pointer]:
+                    - checkbox "Malaysia 1 trips" [ref=f4e934]
+                    - generic [ref=f4e935]: Malaysia
+                    - generic "1 trips" [ref=f4e936]: "1"
+                - listitem [ref=f4e937]:
+                  - generic [ref=f4e938] [cursor=pointer]:
+                    - checkbox "Malta 6 trips" [ref=f4e940]
+                    - generic [ref=f4e941]: Malta
+                    - generic "6 trips" [ref=f4e942]: "6"
+                - listitem [ref=f4e943]:
+                  - generic [ref=f4e944] [cursor=pointer]:
+                    - checkbox "Mediterranean 61 trips" [ref=f4e946]
+                    - generic [ref=f4e947]: Mediterranean
+                    - generic "61 trips" [ref=f4e948]: "61"
+                - listitem [ref=f4e949]:
+                  - generic [ref=f4e950] [cursor=pointer]:
+                    - checkbox "Mexico 1 trips" [ref=f4e952]
+                    - generic [ref=f4e953]: Mexico
+                    - generic "1 trips" [ref=f4e954]: "1"
+                - listitem [ref=f4e955]:
+                  - generic [ref=f4e956] [cursor=pointer]:
+                    - checkbox "Middle East 7 trips" [ref=f4e958]
+                    - generic [ref=f4e959]: Middle East
+                    - generic "7 trips" [ref=f4e960]: "7"
+                - listitem [ref=f4e961]:
+                  - generic [ref=f4e962] [cursor=pointer]:
+                    - checkbox "Mongolia 3 trips" [ref=f4e964]
+                    - generic [ref=f4e965]: Mongolia
+                    - generic "3 trips" [ref=f4e966]: "3"
+                - listitem [ref=f4e967]:
+                  - generic [ref=f4e968] [cursor=pointer]:
+                    - checkbox "Montenegro 3 trips" [ref=f4e970]
+                    - generic [ref=f4e971]: Montenegro
+                    - generic "3 trips" [ref=f4e972]: "3"
+                - listitem [ref=f4e973]:
+                  - generic [ref=f4e974] [cursor=pointer]:
+                    - checkbox "Morocco 5 trips" [ref=f4e976]
+                    - generic [ref=f4e977]: Morocco
+                    - generic "5 trips" [ref=f4e978]: "5"
+                - listitem [ref=f4e979]:
+                  - generic [ref=f4e980] [cursor=pointer]:
+                    - checkbox "Namibia 2 trips" [ref=f4e982]
+                    - generic [ref=f4e983]: Namibia
+                    - generic "2 trips" [ref=f4e984]: "2"
+                - listitem [ref=f4e985]:
+                  - generic [ref=f4e986] [cursor=pointer]:
+                    - checkbox "Nepal 2 trips" [ref=f4e988]
+                    - generic [ref=f4e989]: Nepal
+                    - generic "2 trips" [ref=f4e990]: "2"
+                - listitem [ref=f4e991]:
+                  - generic [ref=f4e992] [cursor=pointer]:
+                    - checkbox "Netherlands 5 trips" [ref=f4e994]
+                    - generic [ref=f4e995]: Netherlands
+                    - generic "5 trips" [ref=f4e996]: "5"
+                - listitem [ref=f4e997]:
+                  - generic [ref=f4e998] [cursor=pointer]:
+                    - checkbox "New Zealand 4 trips" [ref=f4e1000]
+                    - generic [ref=f4e1001]: New Zealand
+                    - generic "4 trips" [ref=f4e1002]: "4"
+                - listitem [ref=f4e1003]:
+                  - generic [ref=f4e1004] [cursor=pointer]:
+                    - checkbox "Nicaragua 2 trips" [ref=f4e1006]
+                    - generic [ref=f4e1007]: Nicaragua
+                    - generic "2 trips" [ref=f4e1008]: "2"
+                - listitem [ref=f4e1009]:
+                  - generic [ref=f4e1010] [cursor=pointer]:
+                    - checkbox "North America 6 trips" [ref=f4e1012]
+                    - generic [ref=f4e1013]: North America
+                    - generic "6 trips" [ref=f4e1014]: "6"
+                - listitem [ref=f4e1015]:
+                  - generic [ref=f4e1016] [cursor=pointer]:
+                    - checkbox "North Macedonia 1 trips" [ref=f4e1018]
+                    - generic [ref=f4e1019]: North Macedonia
+                    - generic "1 trips" [ref=f4e1020]: "1"
+                - listitem [ref=f4e1021]:
+                  - generic [ref=f4e1022] [cursor=pointer]:
+                    - checkbox "Northern Ireland 5 trips" [ref=f4e1024]
+                    - generic [ref=f4e1025]: Northern Ireland
+                    - generic "5 trips" [ref=f4e1026]: "5"
+                - listitem [ref=f4e1027]:
+                  - generic [ref=f4e1028] [cursor=pointer]:
+                    - checkbox "Norway 6 trips" [ref=f4e1030]
+                    - generic [ref=f4e1031]: Norway
+                    - generic "6 trips" [ref=f4e1032]: "6"
+                - listitem [ref=f4e1033]:
+                  - generic [ref=f4e1034] [cursor=pointer]:
+                    - checkbox "Panama 1 trips" [ref=f4e1036]
+                    - generic [ref=f4e1037]: Panama
+                    - generic "1 trips" [ref=f4e1038]: "1"
+                - listitem [ref=f4e1039]:
+                  - generic [ref=f4e1040] [cursor=pointer]:
+                    - checkbox "Peru 6 trips" [ref=f4e1042]
+                    - generic [ref=f4e1043]: Peru
+                    - generic "6 trips" [ref=f4e1044]: "6"
+                - listitem [ref=f4e1045]:
+                  - generic [ref=f4e1046] [cursor=pointer]:
+                    - checkbox "Poland 4 trips" [ref=f4e1048]
+                    - generic [ref=f4e1049]: Poland
+                    - generic "4 trips" [ref=f4e1050]: "4"
+                - listitem [ref=f4e1051]:
+                  - generic [ref=f4e1052] [cursor=pointer]:
+                    - checkbox "Portugal 7 trips" [ref=f4e1054]
+                    - generic [ref=f4e1055]: Portugal
+                    - generic "7 trips" [ref=f4e1056]: "7"
+                - listitem [ref=f4e1057]:
+                  - generic [ref=f4e1058] [cursor=pointer]:
+                    - checkbox "Romania 3 trips" [ref=f4e1060]
+                    - generic [ref=f4e1061]: Romania
+                    - generic "3 trips" [ref=f4e1062]: "3"
+                - listitem [ref=f4e1063]:
+                  - generic [ref=f4e1064] [cursor=pointer]:
+                    - checkbox "Rwanda 3 trips" [ref=f4e1066]
+                    - generic [ref=f4e1067]: Rwanda
+                    - generic "3 trips" [ref=f4e1068]: "3"
+                - listitem [ref=f4e1069]:
+                  - generic [ref=f4e1070] [cursor=pointer]:
+                    - checkbox "Scotland 7 trips" [ref=f4e1072]
+                    - generic [ref=f4e1073]: Scotland
+                    - generic "7 trips" [ref=f4e1074]: "7"
+                - listitem [ref=f4e1075]:
+                  - generic [ref=f4e1076] [cursor=pointer]:
+                    - checkbox "Senegal 1 trips" [ref=f4e1078]
+                    - generic [ref=f4e1079]: Senegal
+                    - generic "1 trips" [ref=f4e1080]: "1"
+                - listitem [ref=f4e1081]:
+                  - generic [ref=f4e1082] [cursor=pointer]:
+                    - checkbox "Serbia 4 trips" [ref=f4e1084]
+                    - generic [ref=f4e1085]: Serbia
+                    - generic "4 trips" [ref=f4e1086]: "4"
+                - listitem [ref=f4e1087]:
+                  - generic [ref=f4e1088] [cursor=pointer]:
+                    - checkbox "Sicily 8 trips" [ref=f4e1090]
+                    - generic [ref=f4e1091]: Sicily
+                    - generic "8 trips" [ref=f4e1092]: "8"
+                - listitem [ref=f4e1093]:
+                  - generic [ref=f4e1094] [cursor=pointer]:
+                    - checkbox "Slovakia 5 trips" [ref=f4e1096]
+                    - generic [ref=f4e1097]: Slovakia
+                    - generic "5 trips" [ref=f4e1098]: "5"
+                - listitem [ref=f4e1099]:
+                  - generic [ref=f4e1100] [cursor=pointer]:
+                    - checkbox "Slovenia 6 trips" [ref=f4e1102]
+                    - generic [ref=f4e1103]: Slovenia
+                    - generic "6 trips" [ref=f4e1104]: "6"
+                - listitem [ref=f4e1105]:
+                  - generic [ref=f4e1106] [cursor=pointer]:
+                    - checkbox "South Africa 3 trips" [ref=f4e1108]
+                    - generic [ref=f4e1109]: South Africa
+                    - generic "3 trips" [ref=f4e1110]: "3"
+                - listitem [ref=f4e1111]:
+                  - generic [ref=f4e1112] [cursor=pointer]:
+                    - checkbox "South America 16 trips" [ref=f4e1114]
+                    - generic [ref=f4e1115]: South America
+                    - generic "16 trips" [ref=f4e1116]: "16"
+                - listitem [ref=f4e1117]:
+                  - generic [ref=f4e1118] [cursor=pointer]:
+                    - checkbox "South Korea 3 trips" [ref=f4e1120]
+                    - generic [ref=f4e1121]: South Korea
+                    - generic "3 trips" [ref=f4e1122]: "3"
+                - listitem [ref=f4e1123]:
+                  - generic [ref=f4e1124] [cursor=pointer]:
+                    - checkbox "South Pacific 4 trips" [ref=f4e1126]
+                    - generic [ref=f4e1127]: South Pacific
+                    - generic "4 trips" [ref=f4e1128]: "4"
+                - listitem [ref=f4e1129]:
+                  - generic [ref=f4e1130] [cursor=pointer]:
+                    - checkbox "Spain 7 trips" [ref=f4e1132]
+                    - generic [ref=f4e1133]: Spain
+                    - generic "7 trips" [ref=f4e1134]: "7"
+                - listitem [ref=f4e1135]:
+                  - generic [ref=f4e1136] [cursor=pointer]:
+                    - checkbox "Sri Lanka 1 trips" [ref=f4e1138]
+                    - generic [ref=f4e1139]: Sri Lanka
+                    - generic "1 trips" [ref=f4e1140]: "1"
+                - listitem [ref=f4e1141]:
+                  - generic [ref=f4e1142] [cursor=pointer]:
+                    - checkbox "Sweden 3 trips" [ref=f4e1144]
+                    - generic [ref=f4e1145]: Sweden
+                    - generic "3 trips" [ref=f4e1146]: "3"
+                - listitem [ref=f4e1147]:
+                  - generic [ref=f4e1148] [cursor=pointer]:
+                    - checkbox "Switzerland 9 trips" [ref=f4e1150]
+                    - generic [ref=f4e1151]: Switzerland
+                    - generic "9 trips" [ref=f4e1152]: "9"
+                - listitem [ref=f4e1153]:
+                  - generic [ref=f4e1154] [cursor=pointer]:
+                    - checkbox "Tajikistan 1 trips" [ref=f4e1156]
+                    - generic [ref=f4e1157]: Tajikistan
+                    - generic "1 trips" [ref=f4e1158]: "1"
+                - listitem [ref=f4e1159]:
+                  - generic [ref=f4e1160] [cursor=pointer]:
+                    - checkbox "Tanzania 4 trips" [ref=f4e1162]
+                    - generic [ref=f4e1163]: Tanzania
+                    - generic "4 trips" [ref=f4e1164]: "4"
+                - listitem [ref=f4e1165]:
+                  - generic [ref=f4e1166] [cursor=pointer]:
+                    - checkbox "Thailand 3 trips" [ref=f4e1168]
+                    - generic [ref=f4e1169]: Thailand
+                    - generic "3 trips" [ref=f4e1170]: "3"
+                - listitem [ref=f4e1171]:
+                  - generic [ref=f4e1172] [cursor=pointer]:
+                    - checkbox "The Gambia 1 trips" [ref=f4e1174]
+                    - generic [ref=f4e1175]: The Gambia
+                    - generic "1 trips" [ref=f4e1176]: "1"
+                - listitem [ref=f4e1177]:
+                  - generic [ref=f4e1178] [cursor=pointer]:
+                    - checkbox "The Netherlands 9 trips" [ref=f4e1180]
+                    - generic [ref=f4e1181]: The Netherlands
+                    - generic "9 trips" [ref=f4e1182]: "9"
+                - listitem [ref=f4e1183]:
+                  - generic [ref=f4e1184] [cursor=pointer]:
+                    - checkbox "Tibet 1 trips" [ref=f4e1186]
+                    - generic [ref=f4e1187]: Tibet
+                    - generic "1 trips" [ref=f4e1188]: "1"
+                - listitem [ref=f4e1189]:
+                  - generic [ref=f4e1190] [cursor=pointer]:
+                    - checkbox "Tunisia 3 trips" [ref=f4e1192]
+                    - generic [ref=f4e1193]: Tunisia
+                    - generic "3 trips" [ref=f4e1194]: "3"
+                - listitem [ref=f4e1195]:
+                  - generic [ref=f4e1196] [cursor=pointer]:
+                    - checkbox "Turkey 6 trips" [ref=f4e1198]
+                    - generic [ref=f4e1199]: Turkey
+                    - generic "6 trips" [ref=f4e1200]: "6"
+                - listitem [ref=f4e1201]:
+                  - generic [ref=f4e1202] [cursor=pointer]:
+                    - checkbox "Uganda 2 trips" [ref=f4e1204]
+                    - generic [ref=f4e1205]: Uganda
+                    - generic "2 trips" [ref=f4e1206]: "2"
+                - listitem [ref=f4e1207]:
+                  - generic [ref=f4e1208] [cursor=pointer]:
+                    - checkbox "United States 2 trips" [ref=f4e1210]
+                    - generic [ref=f4e1211]: United States
+                    - generic "2 trips" [ref=f4e1212]: "2"
+                - listitem [ref=f4e1213]:
+                  - generic [ref=f4e1214] [cursor=pointer]:
+                    - checkbox "Uruguay 2 trips" [ref=f4e1216]
+                    - generic [ref=f4e1217]: Uruguay
+                    - generic "2 trips" [ref=f4e1218]: "2"
+                - listitem [ref=f4e1219]:
+                  - generic [ref=f4e1220] [cursor=pointer]:
+                    - checkbox "Uzbekistan 1 trips" [ref=f4e1222]
+                    - generic [ref=f4e1223]: Uzbekistan
+                    - generic "1 trips" [ref=f4e1224]: "1"
+                - listitem [ref=f4e1225]:
+                  - generic [ref=f4e1226] [cursor=pointer]:
+                    - checkbox "Vietnam 5 trips" [ref=f4e1228]
+                    - generic [ref=f4e1229]: Vietnam
+                    - generic "5 trips" [ref=f4e1230]: "5"
+                - listitem [ref=f4e1231]:
+                  - generic [ref=f4e1232] [cursor=pointer]:
+                    - checkbox "Wales 3 trips" [ref=f4e1234]
+                    - generic [ref=f4e1235]: Wales
+                    - generic "3 trips" [ref=f4e1236]: "3"
+                - listitem [ref=f4e1237]:
+                  - generic [ref=f4e1238] [cursor=pointer]:
+                    - checkbox "Zambia 1 trips" [ref=f4e1240]
+                    - generic [ref=f4e1241]: Zambia
+                    - generic "1 trips" [ref=f4e1242]: "1"
+                - listitem [ref=f4e1243]:
+                  - generic [ref=f4e1244] [cursor=pointer]:
+                    - checkbox "Zimbabwe 3 trips" [ref=f4e1246]
+                    - generic [ref=f4e1247]: Zimbabwe
+                    - generic "3 trips" [ref=f4e1248]: "3"
+              - button "Apply" [ref=f4e1250] [cursor=pointer]
+          - button "Departure Month" [ref=f4e56] [cursor=pointer]
+          - button "Search for trips" [ref=f4e60] [cursor=pointer]
+        - generic [ref=f4e64]:
+          - heading "Start Planning Your Next Trip" [level=2] [ref=f4e65]
+          - generic [ref=f4e67]:
+            - generic [ref=f4e70]:
+              - tablist [ref=f4e72]:
+                - tab "Rivers of Europe" [selected] [ref=f4e73] [cursor=pointer]
+                - tab "Europe by Land" [ref=f4e74] [cursor=pointer]
+                - tab "Beyond Europe" [ref=f4e75] [cursor=pointer]
+              - text: 
+            - region [ref=f4e80]:
+              - generic [ref=f4e82]:
+                - group [ref=f4e83]:
+                  - generic [ref=f4e87]:
+                    - generic [ref=f4e88]:
+                      - paragraph [ref=f4e89]: River Cruise
+                      - heading [level=3] [ref=f4e90]:
+                        - link "Holland & Belgium in Springtime" [ref=f4e91] [cursor=pointer]:
+                          - /url: /trips/river-cruises/europe/holland-and-belgium-in-springtime
+                      - 'img "Rating: 4.683036 out of 5 stars, based on 224 reviews" [ref=f4e92]':
+                        - generic [aria-hidden] [ref=f4e104]: (224)
+                    - generic:
+                      - paragraph
+                    - paragraph [ref=f4e106]: 12 Days
+                - group [ref=f4e107]:
+                  - generic [ref=f4e111]:
+                    - generic [ref=f4e112]:
+                      - paragraph [ref=f4e113]: River Cruise
+                      - heading [level=3] [ref=f4e114]:
+                        - 'link "The Seine: Paris & the Heart of Normandy" [ref=f4e115] [cursor=pointer]':
+                          - /url: /trips/river-cruises/europe/the-seine-paris-to-normandy
+                      - 'img "Rating: 4.7755103 out of 5 stars, based on 637 reviews" [ref=f4e116]':
+                        - generic [aria-hidden] [ref=f4e128]: (637)
+                    - generic:
+                      - paragraph
+                    - paragraph [ref=f4e130]: 13 Days
+                - group [ref=f4e131]:
+                  - generic [ref=f4e135]:
+                    - generic [ref=f4e136]:
+                      - paragraph [ref=f4e137]: River Cruise
+                      - heading [level=3] [ref=f4e138]:
+                        - link "Eastern Europe to the Black Sea" [ref=f4e139] [cursor=pointer]:
+                          - /url: /trips/river-cruises/europe/eastern-europe-to-the-black-sea
+                      - 'img "Rating: 4.696875 out of 5 stars, based on 640 reviews" [ref=f4e140]':
+                        - generic [aria-hidden] [ref=f4e152]: (640)
+                    - generic:
+                      - paragraph
+                    - paragraph [ref=f4e154]: 14 Days
+                - group [ref=f4e155]:
+                  - generic [ref=f4e159]:
+                    - generic [ref=f4e160]:
+                      - paragraph [ref=f4e161]: River Cruise
+                      - heading [level=3] [ref=f4e162]:
+                        - 'link "Romantic Blue Danube: Budapest, Vienna & Prague" [ref=f4e163] [cursor=pointer]':
+                          - /url: /trips/river-cruises/europe/romantic-blue-danube-budapest-to-prague
+                      - 'img "Rating: 4.7657843 out of 5 stars, based on 491 reviews" [ref=f4e164]':
+                        - generic [aria-hidden] [ref=f4e176]: (491)
+                    - generic:
+                      - paragraph
+                    - paragraph [ref=f4e178]: 15 Days
+              - generic [ref=f4e180]:
+                - button "Previous slide" [disabled]:
+                  - generic: 
+                - generic [ref=f4e181]:
+                  - button "Go to slide 1" [ref=f4e182] [cursor=pointer]
+                  - button "Go to slide 2" [ref=f4e183] [cursor=pointer]
+                  - button "Go to slide 3" [ref=f4e184] [cursor=pointer]
+                - button "Next slide" [ref=f4e185] [cursor=pointer]:
+                  - generic [ref=f4e186]: 
+        - link "Find Your Cruise" [ref=f4e189] [cursor=pointer]:
+          - /url: /marketing/black-friday-solo-deals
+        - article [ref=f4e195]:
+          - heading [level=2] [ref=f4e196]:
+            - strong [ref=f4e197]: Explore By Country
+        - generic [ref=f4e200]:
+          - generic [ref=f4e202]:
+            - img "Scenic mountain landscape in Austria." [ref=f4e206]
+            - generic [ref=f4e207]:
+              - heading [level=3] [ref=f4e208]:
+                - link "Austria" [ref=f4e209] [cursor=pointer]:
+                  - /url: /tripsavailable?c=Austria&tt=River+Cruise%2CLand+Tour
+              - paragraph [ref=f4e210]: 10 Trips
+          - generic [ref=f4e212]:
+            - img "Eiffel Tower and Paris skyline in France." [ref=f4e216]
+            - generic [ref=f4e217]:
+              - heading [level=3] [ref=f4e218]:
+                - link "France" [ref=f4e219] [cursor=pointer]:
+                  - /url: /tripsavailable?c=France&tt=River+Cruise%2CLand+Tour
+              - paragraph [ref=f4e220]: 6 Trips
+          - generic [ref=f4e222]:
+            - img "Historic cityscape with river in Germany." [ref=f4e226]
+            - generic [ref=f4e227]:
+              - heading [level=3] [ref=f4e228]:
+                - link "Germany" [ref=f4e229] [cursor=pointer]:
+                  - /url: /tripsavailable?c=Germany&tt=River+Cruise%2CLand+Tour
+              - paragraph [ref=f4e230]: 15 Trips
+          - generic [ref=f4e232]:
+            - img "Panoramic view of Budapest in Hungary." [ref=f4e236]
+            - generic [ref=f4e237]:
+              - heading [level=3] [ref=f4e238]:
+                - link "Hungary" [ref=f4e239] [cursor=pointer]:
+                  - /url: /tripsavailable?c=Hungary&tt=River+Cruise%2CLand+Tour
+              - paragraph [ref=f4e240]: 6 Trips
+          - generic [ref=f4e242]:
+            - img "Colorful coastal town in Italy." [ref=f4e246]
+            - generic [ref=f4e247]:
+              - heading [level=3] [ref=f4e248]:
+                - link "Italy" [ref=f4e249] [cursor=pointer]:
+                  - /url: /tripsavailable?c=Italy&tt=River+Cruise%2CLand+Tour
+              - paragraph [ref=f4e250]: 5 Trips
+          - generic [ref=f4e252]:
+            - img "Canal lined with historic buildings in the Netherlands." [ref=f4e256]
+            - generic [ref=f4e257]:
+              - heading [level=3] [ref=f4e258]:
+                - link "Netherlands" [ref=f4e259] [cursor=pointer]:
+                  - /url: /tripsavailable?c=Netherlands&tt=River+Cruise%2CLand+Tour
+              - paragraph [ref=f4e260]: 5 Trips
+          - generic [ref=f4e262]:
+            - img "Coastal town and harbor in Portugal." [ref=f4e266]
+            - generic [ref=f4e267]:
+              - heading [level=3] [ref=f4e268]:
+                - link "Portugal" [ref=f4e269] [cursor=pointer]:
+                  - /url: /tripsavailable?c=Portugal&tt=River+Cruise%2CLand+Tour
+              - paragraph [ref=f4e270]: 2 Trips
+          - generic [ref=f4e272]:
+            - img "Historic hillside town in Spain." [ref=f4e276]
+            - generic [ref=f4e277]:
+              - heading [level=3] [ref=f4e278]:
+                - link "Spain" [ref=f4e279] [cursor=pointer]:
+                  - /url: /tripsavailable?c=Spain&tt=River+Cruise%2CLand+Tour
+              - paragraph [ref=f4e280]: 1 Trip
+          - generic [ref=f4e282]:
+            - img "Waterfall and mountain landscape in the United States." [ref=f4e286]
+            - generic [ref=f4e287]:
+              - heading [level=3] [ref=f4e288]:
+                - link "United States" [ref=f4e289] [cursor=pointer]:
+                  - /url: /tripsavailable?c=United+States&tt=River+Cruise%2CLand+Tour
+              - paragraph [ref=f4e290]: 2 Trips
+        - article [ref=f4e292]:
+          - generic [ref=f4e293]:
+            - heading "Why Grand Circle?" [level=2] [ref=f4e294]
+            - generic [ref=f4e295]:
+              - generic [ref=f4e296]:
+                - img "Travelers" [ref=f4e297]
+                - generic [ref=f4e298]:
+                  - strong [ref=f4e300]: 700,000+
+                  - text: Travelers Since 2016
+              - generic [ref=f4e301]:
+                - img "Travelers" [ref=f4e302]
+                - generic [ref=f4e303]:
+                  - strong [ref=f4e304]: Award-Winning
+                  - text: Fleet of River Cruises
+              - generic [ref=f4e305]:
+                - img "Travelers" [ref=f4e306]
+                - generic [ref=f4e307]:
+                  - strong [ref=f4e309]: "68"
+                  - text: Years of Experience
+              - generic [ref=f4e310]:
+                - img "Travelers" [ref=f4e311]
+                - generic [ref=f4e312]:
+                  - strong [ref=f4e313]: Designed for
+                  - text: Smaller Groups
+              - generic [ref=f4e314]:
+                - img "Travelers" [ref=f4e315]
+                - generic [ref=f4e316]:
+                  - strong [ref=f4e318]: 24/7
+                  - text: Support Throughout Your Journey
+              - generic [ref=f4e319]:
+                - img "Travelers" [ref=f4e320]
+                - generic [ref=f4e321]:
+                  - strong [ref=f4e323]: $260M
+                  - text: Donated in Over 70 Countries
+        - article [ref=f4e325]:
+          - link "Phone Have a question? › Speak to our team of experts. Our Travel Counselors are here to support you every step of the way. 1-800-221-2610" [ref=f4e326] [cursor=pointer]:
+            - /url: tel:+18002212610
+            - generic [ref=f4e327]:
+              - generic [ref=f4e328]:
+                - paragraph [ref=f4e329]:
+                  - img "Phone" [ref=f4e330]
+                  - strong [ref=f4e332]: Have a question? ›
+                - paragraph [ref=f4e333]: Speak to our team of experts. Our Travel Counselors are here to support you every step of the way.
+              - generic [ref=f4e334]: 1-800-221-2610
+        - generic:
+          - article
+        - generic [ref=f4e337]:
+          - heading "From Our Inside Scoop Newsletter" [level=2] [ref=f4e338]
+          - generic [ref=f4e339]:
+            - generic [ref=f4e341]:
+              - link "Read More" [ref=f4e342] [cursor=pointer]:
+                - /url: https://qa.oattravel.com/community/the-inside-scoop/trending-topics/black-friday-travel-deals-guide
+              - generic:
+                - 'heading "Complete Guide: Black Friday Deals" [level=5]':
+                  - strong: "Complete Guide: Black Friday Deals"
+                - paragraph: This guide explains what travelers should know about our Black Friday travel promotion.
+                - paragraph:
+                  - link "Read More" [ref=f4e345] [cursor=pointer]:
+                    - /url: https://qa.oattravel.com/community/the-inside-scoop/trending-topics/black-friday-travel-deals-guide
+            - generic [ref=f4e347]:
+              - link "Read More" [ref=f4e348] [cursor=pointer]:
+                - /url: https://qa.oattravel.com/community/the-inside-scoop/trending-topics/trend-2-top-10-bf-teaser
+              - generic:
+                - 'heading "Top 10: Most Popular Journeys for 2027" [level=5]':
+                  - strong: "Top 10: Most Popular Journeys for 2027"
+                - paragraph:
+                  - text: See where our travelers are headed next year on these trending journeys.
+                  - link "Read More" [ref=f4e351] [cursor=pointer]:
+                    - /url: https://qa.oattravel.com/community/the-inside-scoop/trending-topics/trend-2-top-10-bf-teaser
+            - generic [ref=f4e353]:
+              - link "Read More" [ref=f4e354] [cursor=pointer]:
+                - /url: https://qa.oattravel.com/community/the-inside-scoop/on-the-road/lewis-family-safari
+              - generic:
+                - heading "The Lewis Family Safari" [level=5]:
+                  - strong: The Lewis Family Safari
+                - paragraph
+                - paragraph:
+                  - text: Harriet Lewis reflects on why visiting Tanzania with her whole family was “a dream come true.”
+                  - link "Read More" [ref=f4e357] [cursor=pointer]:
+                    - /url: https://qa.oattravel.com/community/the-inside-scoop/on-the-road/lewis-family-safari
+                - paragraph
+        - generic:
+          - article
+        - article [ref=f4e359]:
+          - link [ref=f4e360] [cursor=pointer]:
+            - /url: /grand-circle-difference/awards
+            - generic [ref=f4e361]:
+              - generic [ref=f4e362]:
+                - paragraph [ref=f4e363]:
+                  - strong [ref=f4e365]: See Our Awards ›
+                - paragraph [ref=f4e366]:
+                  - text: Recognized as the leader in small group travel by
+                  - emphasis [ref=f4e367]: Travel + Leisure
+                  - text: ","
+                  - emphasis [ref=f4e368]: Condé Nast Traveler
+                  - text: ","
+                  - emphasis [ref=f4e369]: USA Today
+                  - text: ", and more."
+              - generic [ref=f4e371]:
+                - img "Travel + Leisure World's Best Awards 2026" [ref=f4e372]
+                - img "Award Logo" [ref=f4e373]
+                - img "Condé Nast Traveler Readers' Choice Awards 2025" [ref=f4e374]
+  - contentinfo [ref=f4e376]:
+    - generic [ref=f4e377]:
+      - generic [ref=f4e378]:
+        - generic [ref=f4e379]:
+          - region "Get top deals, the latest news, and more" [ref=f4e381]:
+            - heading "Get top deals, the latest news, and more" [level=2] [ref=f4e382]
+            - generic [ref=f4e385]:
+              - textbox "Email Address" [ref=f4e387]
+              - button "Sign-Up" [ref=f4e388] [cursor=pointer]
+          - generic [ref=f4e389]:
+            - heading "Travel Counselors" [level=2] [ref=f4e390]
+            - list [ref=f4e391]:
+              - listitem [ref=f4e392]:
+                - generic [ref=f4e393]: 
+                - link "1-800-221-2610" [ref=f4e394] [cursor=pointer]:
+                  - /url: tel:1-800-221-2610
+          - generic [ref=f4e395]:
+            - heading "Connect With Us" [level=2] [ref=f4e396]
+            - list [ref=f4e397]:
+              - listitem [ref=f4e398]:
+                - link "icon-facebook-new" [ref=f4e399] [cursor=pointer]:
+                  - /url: https://www.facebook.com/grandcircletravel
+                  - generic [ref=f4e401]:
+                    - generic [ref=f4e402]: 
+                    - text: 
+              - listitem [ref=f4e404]:
+                - link "icon-linkedin-new" [ref=f4e405] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/grand-circle-corporation/posts/
+                  - generic [ref=f4e407]:
+                    - generic [ref=f4e408]: 
+                    - text: 
+        - generic [ref=f4e410]:
+          - generic [ref=f4e411]:
+            - paragraph [ref=f4e412]: River Cruises
+            - list [ref=f4e413]:
+              - listitem [ref=f4e414]:
+                - link "Europe" [ref=f4e415] [cursor=pointer]:
+                  - /url: /tripsavailable?tt=River+Cruise&r=Europe
+              - listitem [ref=f4e417]:
+                - link "European Christmas Cruises" [ref=f4e418] [cursor=pointer]:
+                  - /url: /tripsavailable?q=Christmas+Holiday
+          - generic [ref=f4e420]:
+            - paragraph [ref=f4e421]: Land Tours
+            - list [ref=f4e422]:
+              - listitem [ref=f4e423]:
+                - link "Europe" [ref=f4e424] [cursor=pointer]:
+                  - /url: /tripsavailable?q=Europe&r=Europe&tt=Land+Tour
+              - listitem [ref=f4e426]:
+                - link "North America" [ref=f4e427] [cursor=pointer]:
+                  - /url: /tripsavailable?r=North+America&tt=Land+Tour
+              - listitem [ref=f4e429]:
+                - link "South Pacific" [ref=f4e430] [cursor=pointer]:
+                  - /url: /tripsavailable?r=South+Pacific&tt=Land+Tour
+          - generic [ref=f4e432]:
+            - paragraph [ref=f4e433]: Grand Circle Difference
+            - list [ref=f4e434]:
+              - listitem [ref=f4e435]:
+                - link "Special Offers" [ref=f4e436] [cursor=pointer]:
+                  - /url: /special-offers
+              - listitem [ref=f4e438]:
+                - link "Best Price Guarantee" [ref=f4e439] [cursor=pointer]:
+                  - /url: /ways-to-save/best-price-guarantee
+              - listitem [ref=f4e441]:
+                - link "Refer and Earn" [ref=f4e442] [cursor=pointer]:
+                  - /url: /ways-to-save/refer-and-earn
+              - listitem [ref=f4e444]:
+                - link "Travel Protection Plan" [ref=f4e445] [cursor=pointer]:
+                  - /url: /ways-to-save/travel-protection-plan
+              - listitem [ref=f4e447]:
+                - link "Solo-Friendly Travel" [ref=f4e448] [cursor=pointer]:
+                  - /url: /ways-to-save/solo-traveler
+              - listitem [ref=f4e450]:
+                - link "Group Travel Program" [ref=f4e451] [cursor=pointer]:
+                  - /url: /ways-to-save/travel-free-as-a-group-leader
+              - listitem [ref=f4e453]:
+                - link "Inner Circle" [ref=f4e454] [cursor=pointer]:
+                  - /url: /grand-circle-difference/inner-circle-club
+              - listitem [ref=f4e456]:
+                - link "Grand Circle Foundation" [ref=f4e457] [cursor=pointer]:
+                  - /url: /grand-circle-difference/grand-circle-foundation
+          - generic [ref=f4e459]:
+            - paragraph [ref=f4e460]: Contact Us
+            - list [ref=f4e461]:
+              - listitem [ref=f4e462]:
+                - link "About Us" [ref=f4e463] [cursor=pointer]:
+                  - /url: /about-us
+              - listitem [ref=f4e465]:
+                - link "Reservations & Customer Service" [ref=f4e466] [cursor=pointer]:
+                  - /url: /about-us/contact-us
+              - listitem [ref=f4e468]:
+                - link "Frequently Asked Questions" [ref=f4e469] [cursor=pointer]:
+                  - /url: /faq-home
+              - listitem [ref=f4e471]:
+                - link "People & Culture" [ref=f4e472] [cursor=pointer]:
+                  - /url: /about-us/people-and-culture
+              - listitem [ref=f4e474]:
+                - link "Career Opportunities" [ref=f4e475] [cursor=pointer]:
+                  - /url: /about-us/people-and-culture/careers?q=&o=postedDateDesc&w=&wc=&we=&wpst=
+              - listitem [ref=f4e477]:
+                - link "Media Inquires" [ref=f4e478] [cursor=pointer]:
+                  - /url: /about-us/press--media-resources
+                  - text: Media Inquiries
+              - listitem [ref=f4e480]:
+                - link "Traveler Photo Contest" [ref=f4e481] [cursor=pointer]:
+                  - /url: /community/traveler-photo-contest
+              - listitem [ref=f4e483]:
+                - link "View Digital Catalog" [ref=f4e484] [cursor=pointer]:
+                  - /url: /marketing/sem/rivers-catalog-sign-up
+              - listitem [ref=f4e486]:
+                - link "Travel Updates & Notifications" [ref=f4e487] [cursor=pointer]:
+                  - /url: /marketing/travel-updates
+      - text:       
+    - generic [ref=f4e491]:
+      - generic [ref=f4e492]:
+        - img "Image" [ref=f4e494]
+        - paragraph [ref=f4e495]: 347 Congress St. Boston, MA 02210
+        - paragraph [ref=f4e496]: © 2026 Grand Circle Travel
+        - paragraph [ref=f4e497]: Release Version 3110508222
+      - generic [ref=f4e498]:
+        - heading "Family of Brands" [level=2] [ref=f4e499]
+        - list [ref=f4e500]:
+          - listitem [ref=f4e501]:
+            - link "Overseas Adventure Travel" [ref=f4e502] [cursor=pointer]:
+              - /url: https://qa.oattravel.com/
+      - generic [ref=f4e504]:
+        - generic [ref=f4e505]:
+          - link [ref=f4e506] [cursor=pointer]:
+            - /url: https://www.bbb.org/us/ma/boston/profile/travel-agency/overseas-adventure-travel-0021-3848/accreditation-information
+            - img "Image" [ref=f4e507]
+          - link [ref=f4e508] [cursor=pointer]:
+            - /url: https://ustoa.com/grand-circle
+            - img "Image" [ref=f4e509]
+        - generic [ref=f4e510]:
+          - generic [ref=f4e511]:
+            - link "Terms & Conditions" [ref=f4e512] [cursor=pointer]:
+              - /url: /terms-and-conditions
+            - text: "|"
+          - generic [ref=f4e514]:
+            - link "Privacy Policy" [ref=f4e515] [cursor=pointer]:
+              - /url: /privacy-policy
+            - text: "|"
+          - generic [ref=f4e517]:
+            - link "Your California and Other State Privacy Rights" [ref=f4e518] [cursor=pointer]:
+              - /url: /state-privacy-rights
+            - text: "|"
+          - generic [ref=f4e520]:
+            - link "California Notice at Collection" [ref=f4e521] [cursor=pointer]:
+              - /url: /notice-at-collection
+            - text: "|"
+          - generic [ref=f4e523]:
+            - link "Terms of Use" [ref=f4e524] [cursor=pointer]:
+              - /url: /terms-of-use
+            - text: "|"
+          - generic [ref=f4e526]:
+            - link "Medical Issues & Disabilities" [ref=f4e527] [cursor=pointer]:
+              - /url: /terms-and-conditions#meddicalissues
+            - text: "|"
+          - 'link "CST # 2041626-20" [ref=f4e530] [cursor=pointer]':
+            - /url: /terms-and-conditions#mts
+  - alert [ref=f4e532]
+  - iframe

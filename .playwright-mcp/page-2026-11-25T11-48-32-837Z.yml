@@ -1,0 +1,287 @@
+- generic [ref=f12e1]:
+  - generic [ref=f12e3]:
+    - generic [ref=f12e4]:
+      - paragraph [ref=f12e6]: Save up to $3,000 on select 2027 departures
+      - button "Shop Black Friday" [ref=f12e8] [cursor=pointer]
+    - button "Close banner" [ref=f12e9] [cursor=pointer]:
+      - generic [ref=f12e10]: 
+  - banner [ref=f12e11]:
+    - text:   
+    - generic [ref=f12e12]:
+      - generic [ref=f12e13]:
+        - text:   
+        - button " Toggle menu" [ref=f12e16] [cursor=pointer]:
+          - generic [ref=f12e17]: 
+          - generic [ref=f12e18]: Toggle menu
+      - link [ref=f12e20] [cursor=pointer]:
+        - /url: /
+        - img "Logo with text Grand Circle Cruise Line and Grand Circle Travel" [ref=f12e21]
+      - generic [ref=f12e22]:
+        - link "Call us at 1-800-221-2610" [ref=f12e23] [cursor=pointer]:
+          - /url: tel:+1-800-221-2610
+          - generic [ref=f12e24]: 
+        - generic [ref=f12e25]:
+          - text: 
+          - button "Log in" [ref=f12e27] [cursor=pointer]:
+            - generic [ref=f12e28]: 
+  - main [ref=f12e29]:
+    - generic [ref=f12e31]:
+      - generic [ref=f12e34]:
+        - text: 
+        - tablist [ref=f12e36]:
+          - tab "1 Departure Details" [selected] [ref=f12e37] [cursor=pointer]:
+            - generic [ref=f12e38]: "1"
+            - text: Departure Details
+          - tab "2 Cabins" [disabled]:
+            - generic: "2"
+            - text: Cabins
+          - tab "3 Pricing Summary" [disabled]:
+            - generic: "3"
+            - text: Pricing Summary
+        - text: 
+      - tabpanel "1 Departure Details" [ref=f12e40]:
+        - generic [ref=f12e43]:
+          - generic [ref=f12e44]:
+            - generic [ref=f12e45]:
+              - link [ref=f12e46] [cursor=pointer]:
+                - /url: /trips/river-cruises/europe/amsterdam-to-frankfurt-river-cruise
+                - 'heading "Rhine River: Canals, Castles & Cultural Treasures" [level=1] [ref=f12e47]'
+              - generic [ref=f12e48]:
+                - generic [ref=f12e49]:
+                  - paragraph [ref=f12e50]: Days
+                  - paragraph [ref=f12e51]: "9"
+                - generic [ref=f12e52]:
+                  - paragraph [ref=f12e53]: Group Size
+                  - paragraph [ref=f12e54]: Average of 38 travelers
+                - generic [ref=f12e55]:
+                  - paragraph [ref=f12e56]: Reviews
+                  - link "     (0)" [ref=f12e57] [cursor=pointer]:
+                    - /url: ""
+                    - generic [ref=f12e58]: 
+                    - generic [ref=f12e59]: 
+                    - generic [ref=f12e60]: 
+                    - generic [ref=f12e61]: 
+                    - generic [ref=f12e62]: 
+                    - generic [ref=f12e63]: (0)
+                - generic [ref=f12e64]:
+                  - paragraph [ref=f12e65]:
+                    - text: Activity Level
+                    - link "Activity information" [ref=f12e66] [cursor=pointer]:
+                      - /url: "#"
+                      - generic [ref=f12e67]: 
+                  - generic [ref=f12e68]:
+                    - generic [ref=f12e69] [cursor=pointer]: "1"
+                    - generic [ref=f12e71] [cursor=pointer]: "2"
+                    - generic [ref=f12e73] [cursor=pointer]: "3"
+                    - generic [ref=f12e75] [cursor=pointer]: "4"
+                    - generic [ref=f12e77] [cursor=pointer]: "5"
+            - link [ref=f12e79] [cursor=pointer]:
+              - /url: /trips/river-cruises/europe/amsterdam-to-frankfurt-river-cruise
+              - img "Alt Text from API" [ref=f12e83]
+          - heading "Departure Dates" [level=2] [ref=f12e84]
+          - generic [ref=f12e85]:
+            - 'button "Occupancy: Double Occupancy" [ref=f12e88] [cursor=pointer]':
+              - generic [ref=f12e89]:
+                - generic [ref=f12e90]: 
+                - generic [ref=f12e91]: Double Occupancy
+              - generic [ref=f12e92]: 
+            - generic [ref=f12e94]:
+              - 'button "Year filter: All Years" [expanded] [active] [ref=f12e95] [cursor=pointer]':
+                - generic [ref=f12e96]:
+                  - generic [ref=f12e97]: 
+                  - generic [ref=f12e98]: All Years
+                - generic [ref=f12e298]: 
+              - menu [ref=f12e299]:
+                - button "Close year filter" [ref=f12e301] [cursor=pointer]:
+                  - generic [ref=f12e302]: 
+                - menuitemcheckbox "2027" [checked] [ref=f12e303] [cursor=pointer]
+            - generic [ref=f12e100]:
+              - button "Newark, NJ(EWR), Update" [ref=f12e103] [cursor=pointer]:
+                - paragraph [ref=f12e104]:
+                  - generic [ref=f12e105]:
+                    - generic [ref=f12e106]: 
+                    - generic [ref=f12e107]: Newark, NJ(EWR)
+                  - generic [ref=f12e108]: Update
+              - generic [ref=f12e110]:
+                - generic [ref=f12e111]: 
+                - text: Include airfare
+          - status [ref=f12e113]:
+            - generic [ref=f12e114]:
+              - paragraph [ref=f12e118]: Black Friday Savings
+              - paragraph [ref=f12e121]:
+                - generic [ref=f12e122]:
+                  - text: Promotional offers are not reflected in the prices shown. Call
+                  - link "1-800-221-2610" [ref=f12e123] [cursor=pointer]:
+                    - /url: tel:+18002212610
+                  - text: to speak with a Travel Counselor for your best available price.
+          - generic [ref=f12e125]:
+            - heading "2027" [level=3] [ref=f12e127]
+            - heading [level=3] [ref=f12e131]:
+              - button "September From $4,499 " [ref=f12e132] [cursor=pointer]:
+                - generic [ref=f12e133]:
+                  - heading "September" [level=5] [ref=f12e134]
+                  - generic [ref=f12e135]:
+                    - generic [ref=f12e136]: From
+                    - heading "$4,499" [level=5] [ref=f12e137]
+                - generic [ref=f12e138]: 
+  - contentinfo [ref=f12e141]:
+    - generic [ref=f12e142]:
+      - generic [ref=f12e143]:
+        - generic [ref=f12e144]:
+          - region "Get top deals, the latest news, and more" [ref=f12e146]:
+            - heading "Get top deals, the latest news, and more" [level=2] [ref=f12e147]
+            - generic [ref=f12e150]:
+              - textbox "Email Address" [ref=f12e152]
+              - button "Sign-Up" [ref=f12e153] [cursor=pointer]
+          - generic [ref=f12e154]:
+            - heading "Travel Counselors" [level=2] [ref=f12e155]
+            - list [ref=f12e156]:
+              - listitem [ref=f12e157]:
+                - generic [ref=f12e158]: 
+                - link "1-800-221-2610" [ref=f12e159] [cursor=pointer]:
+                  - /url: tel:1-800-221-2610
+          - generic [ref=f12e160]:
+            - heading "Connect With Us" [level=2] [ref=f12e161]
+            - list [ref=f12e162]:
+              - listitem [ref=f12e163]:
+                - link "icon-facebook-new" [ref=f12e164] [cursor=pointer]:
+                  - /url: https://www.facebook.com/grandcircletravel
+                  - generic [ref=f12e166]:
+                    - generic [ref=f12e167]: 
+                    - text: 
+              - listitem [ref=f12e169]:
+                - link "icon-linkedin-new" [ref=f12e170] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/grand-circle-corporation/posts/
+                  - generic [ref=f12e172]:
+                    - generic [ref=f12e173]: 
+                    - text: 
+        - generic [ref=f12e175]:
+          - generic [ref=f12e176]:
+            - paragraph [ref=f12e177]: River Cruises
+            - list [ref=f12e178]:
+              - listitem [ref=f12e179]:
+                - link "Europe" [ref=f12e180] [cursor=pointer]:
+                  - /url: /tripsavailable?tt=River+Cruise&r=Europe
+              - listitem [ref=f12e182]:
+                - link "European Christmas Cruises" [ref=f12e183] [cursor=pointer]:
+                  - /url: /tripsavailable?q=Christmas+Holiday
+          - generic [ref=f12e185]:
+            - paragraph [ref=f12e186]: Land Tours
+            - list [ref=f12e187]:
+              - listitem [ref=f12e188]:
+                - link "Europe" [ref=f12e189] [cursor=pointer]:
+                  - /url: /tripsavailable?q=Europe&r=Europe&tt=Land+Tour
+              - listitem [ref=f12e191]:
+                - link "North America" [ref=f12e192] [cursor=pointer]:
+                  - /url: /tripsavailable?r=North+America&tt=Land+Tour
+              - listitem [ref=f12e194]:
+                - link "South Pacific" [ref=f12e195] [cursor=pointer]:
+                  - /url: /tripsavailable?r=South+Pacific&tt=Land+Tour
+          - generic [ref=f12e197]:
+            - paragraph [ref=f12e198]: Grand Circle Difference
+            - list [ref=f12e199]:
+              - listitem [ref=f12e200]:
+                - link "Special Offers" [ref=f12e201] [cursor=pointer]:
+                  - /url: /special-offers
+              - listitem [ref=f12e203]:
+                - link "Best Price Guarantee" [ref=f12e204] [cursor=pointer]:
+                  - /url: /ways-to-save/best-price-guarantee
+              - listitem [ref=f12e206]:
+                - link "Refer and Earn" [ref=f12e207] [cursor=pointer]:
+                  - /url: /ways-to-save/refer-and-earn
+              - listitem [ref=f12e209]:
+                - link "Travel Protection Plan" [ref=f12e210] [cursor=pointer]:
+                  - /url: /ways-to-save/travel-protection-plan
+              - listitem [ref=f12e212]:
+                - link "Solo-Friendly Travel" [ref=f12e213] [cursor=pointer]:
+                  - /url: /ways-to-save/solo-traveler
+              - listitem [ref=f12e215]:
+                - link "Group Travel Program" [ref=f12e216] [cursor=pointer]:
+                  - /url: /ways-to-save/travel-free-as-a-group-leader
+              - listitem [ref=f12e218]:
+                - link "Inner Circle" [ref=f12e219] [cursor=pointer]:
+                  - /url: /grand-circle-difference/inner-circle-club
+              - listitem [ref=f12e221]:
+                - link "Grand Circle Foundation" [ref=f12e222] [cursor=pointer]:
+                  - /url: /grand-circle-difference/grand-circle-foundation
+          - generic [ref=f12e224]:
+            - paragraph [ref=f12e225]: Contact Us
+            - list [ref=f12e226]:
+              - listitem [ref=f12e227]:
+                - link "About Us" [ref=f12e228] [cursor=pointer]:
+                  - /url: /about-us
+              - listitem [ref=f12e230]:
+                - link "Reservations & Customer Service" [ref=f12e231] [cursor=pointer]:
+                  - /url: /about-us/contact-us
+              - listitem [ref=f12e233]:
+                - link "Frequently Asked Questions" [ref=f12e234] [cursor=pointer]:
+                  - /url: /faq-home
+              - listitem [ref=f12e236]:
+                - link "People & Culture" [ref=f12e237] [cursor=pointer]:
+                  - /url: /about-us/people-and-culture
+              - listitem [ref=f12e239]:
+                - link "Career Opportunities" [ref=f12e240] [cursor=pointer]:
+                  - /url: /about-us/people-and-culture/careers?q=&o=postedDateDesc&w=&wc=&we=&wpst=
+              - listitem [ref=f12e242]:
+                - link "Media Inquires" [ref=f12e243] [cursor=pointer]:
+                  - /url: /about-us/press--media-resources
+                  - text: Media Inquiries
+              - listitem [ref=f12e245]:
+                - link "Traveler Photo Contest" [ref=f12e246] [cursor=pointer]:
+                  - /url: /community/traveler-photo-contest
+              - listitem [ref=f12e248]:
+                - link "View Digital Catalog" [ref=f12e249] [cursor=pointer]:
+                  - /url: /marketing/sem/rivers-catalog-sign-up
+              - listitem [ref=f12e251]:
+                - link "Travel Updates & Notifications" [ref=f12e252] [cursor=pointer]:
+                  - /url: /marketing/travel-updates
+      - text:       
+    - generic [ref=f12e256]:
+      - generic [ref=f12e257]:
+        - img "Image" [ref=f12e259]
+        - paragraph [ref=f12e260]: 347 Congress St. Boston, MA 02210
+        - paragraph [ref=f12e261]: © 2026 Grand Circle Travel
+        - paragraph [ref=f12e262]: Release Version 3110508222
+      - generic [ref=f12e263]:
+        - heading "Family of Brands" [level=2] [ref=f12e264]
+        - list [ref=f12e265]:
+          - listitem [ref=f12e266]:
+            - link "Overseas Adventure Travel" [ref=f12e267] [cursor=pointer]:
+              - /url: https://qa.oattravel.com/
+      - generic [ref=f12e269]:
+        - generic [ref=f12e270]:
+          - link [ref=f12e271] [cursor=pointer]:
+            - /url: https://www.bbb.org/us/ma/boston/profile/travel-agency/overseas-adventure-travel-0021-3848/accreditation-information
+            - img "Image" [ref=f12e272]
+          - link [ref=f12e273] [cursor=pointer]:
+            - /url: https://ustoa.com/grand-circle
+            - img "Image" [ref=f12e274]
+        - generic [ref=f12e275]:
+          - generic [ref=f12e276]:
+            - link "Terms & Conditions" [ref=f12e277] [cursor=pointer]:
+              - /url: /terms-and-conditions
+            - text: "|"
+          - generic [ref=f12e279]:
+            - link "Privacy Policy" [ref=f12e280] [cursor=pointer]:
+              - /url: /privacy-policy
+            - text: "|"
+          - generic [ref=f12e282]:
+            - link "Your California and Other State Privacy Rights" [ref=f12e283] [cursor=pointer]:
+              - /url: /state-privacy-rights
+            - text: "|"
+          - generic [ref=f12e285]:
+            - link "California Notice at Collection" [ref=f12e286] [cursor=pointer]:
+              - /url: /notice-at-collection
+            - text: "|"
+          - generic [ref=f12e288]:
+            - link "Terms of Use" [ref=f12e289] [cursor=pointer]:
+              - /url: /terms-of-use
+            - text: "|"
+          - generic [ref=f12e291]:
+            - link "Medical Issues & Disabilities" [ref=f12e292] [cursor=pointer]:
+              - /url: /terms-and-conditions#meddicalissues
+            - text: "|"
+          - 'link "CST # 2041626-20" [ref=f12e295] [cursor=pointer]':
+            - /url: /terms-and-conditions#mts
+  - alert [ref=f12e297]
+  - iframe

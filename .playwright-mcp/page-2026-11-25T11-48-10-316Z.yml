@@ -1,0 +1,406 @@
+- generic [active] [ref=f8e1]:
+  - generic [ref=f8e3]:
+    - generic [ref=f8e4]:
+      - paragraph [ref=f8e6]: Save up to $3,000 on select 2027 departures
+      - button "Shop Black Friday" [ref=f8e8] [cursor=pointer]
+    - button "Close banner" [ref=f8e541] [cursor=pointer]:
+      - generic [ref=f8e10]: 
+  - banner [ref=f8e11]:
+    - text:        
+    - generic [ref=f8e12]:
+      - generic [ref=f8e13]:
+        - text:   
+        - button " Toggle menu" [ref=f8e16] [cursor=pointer]:
+          - generic [ref=f8e17]: 
+          - generic [ref=f8e18]: Toggle menu
+      - link [ref=f8e20] [cursor=pointer]:
+        - /url: /
+        - img "Logo with text Grand Circle Cruise Line and Grand Circle Travel" [ref=f8e21]
+      - generic [ref=f8e22]:
+        - link "Call us at 1-800-221-2610" [ref=f8e23] [cursor=pointer]:
+          - /url: tel:+1-800-221-2610
+          - generic [ref=f8e24]: 
+        - generic [ref=f8e25]:
+          - text: 
+          - button "Log in" [ref=f8e27] [cursor=pointer]:
+            - generic [ref=f8e28]: 
+  - main [ref=f8e29]:
+    - generic [ref=f8e30]:
+      - generic [ref=f8e34]:
+        - 'heading "Rhine River: Canals, Castles & Cultural Treasures" [level=1] [ref=f8e35]'
+        - generic [ref=f8e36]:
+          - generic [ref=f8e37]: New
+          - generic [ref=f8e38]: River Cruise
+        - generic [ref=f8e39]:
+          - generic [ref=f8e40]:
+            - generic [ref=f8e41]: $4,499per person
+            - generic [ref=f8e42]: Includes airfare
+          - button "Watch Itinerary" [ref=f8e43] [cursor=pointer]
+      - generic [ref=f8e47]:
+        - generic [ref=f8e48]:
+          - generic [ref=f8e49]: "Duration:"
+          - generic [ref=f8e50]: 9 Days
+        - generic [ref=f8e52]:
+          - generic [ref=f8e53]: "Activity level:"
+          - generic [ref=f8e54]:
+            - generic [ref=f8e55]: "1"
+            - button "Find the Adventure That’s Right for You" [ref=f8e56] [cursor=pointer]
+        - generic [ref=f8e59]:
+          - generic [ref=f8e60]: "Group size:"
+          - generic [ref=f8e61]: Average of 38 travelers
+        - generic [ref=f8e63]:
+          - generic [ref=f8e64]: "Reviews:"
+          - 'link "Rating: 0 out of 5 stars 0" [ref=f8e65] [cursor=pointer]':
+            - /url: "#reviews"
+            - 'img "Rating: 0 out of 5 stars" [ref=f8e66]'
+            - generic [ref=f8e78]: "0"
+        - generic [ref=f8e79]:
+          - generic [ref=f8e80]: "Single Supplement:"
+          - generic [ref=f8e81]: Low-Cost
+    - generic [ref=f8e83]:
+      - navigation [ref=f8e87]:
+        - generic [ref=f8e88]:
+          - button "Accommodations  Toggle menu" [ref=f8e543] [cursor=pointer]:
+            - generic [ref=f8e91]: Accommodations
+            - generic [ref=f8e92]: 
+            - generic [ref=f8e93]: Toggle menu
+          - button "2027 " [ref=f8e96] [cursor=pointer]:
+            - text: "2027"
+            - generic [ref=f8e97]: 
+          - link "View Dates & Prices" [ref=f8e98] [cursor=pointer]:
+            - /url: /trips/river-cruises/europe/amsterdam-to-frankfurt-river-cruise/availabledatesandprices
+      - generic [ref=f8e103]:
+        - region "Overview" [ref=f8e106]:
+          - heading "Overview" [level=2] [ref=f8e107]
+          - paragraph [ref=f8e109]:
+            - text: Unpack once and cruise for
+            - strong [ref=f8e110]:
+              - text: seven nights aboard the 162-passenger, privately owned M/S
+              - emphasis [ref=f8e111]: River Aria
+            - text: on this
+            - strong [ref=f8e112]: two-departure-only
+            - text: Rhine River Cruise. From Amsterdam’s graceful canals, to the World War II history of Arnhem, and the Gothic spires of Cologne Cathedral, discover centuries of history amid vineyard-blanketed hills, storybook villages, and castle-crowned cliffs.
+          - region "What's Included" [ref=f8e113]:
+            - heading "What's Included" [level=3] [ref=f8e114]
+            - list [ref=f8e116]:
+              - listitem [ref=f8e117]: 7 nights' accommodations aboard our privately owned river ship
+              - listitem [ref=f8e118]: 20 meals—7 breakfasts, 6 lunches, and 7 dinners, plus all onboard house beer, wine, and soft drinks
+              - listitem [ref=f8e119]: All transportation and transfers, including port charges
+              - listitem [ref=f8e120]: International airfare, airport transfers, taxes, fees & fuel surcharges with Grand Circle airfare
+              - listitem [ref=f8e121]: Services of a local Program Director
+              - listitem [ref=f8e122]: 12 activities, including an Amsterdam canal cruise and a visit to a family-owned winery in Winningen
+              - listitem [ref=f8e123]: Gratuities for local guides and drivers
+          - button "View Travel Planning Guide" [ref=f8e125] [cursor=pointer]
+        - generic [ref=f8e127]:
+          - button "Open trip map in full screen" [ref=f8e128] [cursor=pointer]:
+            - img "8113b014bf024026b2c7b4ec011cbf1e" [ref=f8e129]
+          - paragraph [ref=f8e131]:
+            - strong [ref=f8e132]: "The Netherlands:"
+            - text: Amsterdam, Arnhem |
+            - strong [ref=f8e133]: "Germany:"
+            - text: Cologne, Koblenz, Mainz, Heidelberg, Frankfurt
+      - region "Videos" [ref=f8e134]:
+        - list [ref=f8e135]:
+          - listitem [ref=f8e136]:
+            - button "Play 2027 Itinerary 4:05" [ref=f8e137] [cursor=pointer]:
+              - generic [ref=f8e141]:
+                - generic [ref=f8e142]: Play
+                - generic [ref=f8e143]: 2027 Itinerary
+                - generic [ref=f8e144]: 4:05
+      - region "Accommodations" [ref=f8e146]:
+        - generic [ref=f8e147]:
+          - heading "Accommodations" [level=2] [ref=f8e148]
+          - region "Ships" [ref=f8e149]:
+            - group [ref=f8e152]:
+              - generic [ref=f8e155]:
+                - generic [ref=f8e156]:
+                  - heading [level=3] [ref=f8e157]:
+                    - button "M/S River Aria" [ref=f8e158] [cursor=pointer]
+                  - paragraph [ref=f8e159]: Privately Owned, 162-passenger Ship
+                - paragraph [ref=f8e160]: Owned, operated, and staffed by Grand Circle Cruise Line, the M/S River Aria was designed exclusively for four groups of 38-45 travelers.
+      - generic [ref=f8e163]:
+        - heading "Dates and Prices" [level=1] [ref=f8e164]
+        - generic [ref=f8e166]:
+          - 'button "Occupancy: Double Occupancy" [ref=f8e169] [cursor=pointer]':
+            - generic [ref=f8e170]:
+              - generic [ref=f8e171]: 
+              - generic [ref=f8e172]: Double Occupancy
+            - generic [ref=f8e173]: 
+          - button "Departure Month" [ref=f8e176] [cursor=pointer]:
+            - generic [ref=f8e177]:
+              - generic [ref=f8e178]: 
+              - generic [ref=f8e179]: Departure Month
+            - generic [ref=f8e180]: 
+          - generic [ref=f8e181]:
+            - button "Newark, NJ(EWR), Update" [ref=f8e184] [cursor=pointer]:
+              - paragraph [ref=f8e185]:
+                - generic [ref=f8e186]:
+                  - generic [ref=f8e187]: 
+                  - generic [ref=f8e188]: Newark, NJ(EWR)
+                - generic [ref=f8e189]: Update
+            - generic [ref=f8e191]:
+              - generic [ref=f8e192]: 
+              - text: Include airfare
+          - generic [ref=f8e194]:
+            - text:  
+            - 'button "Sort By: Date" [ref=f8e196] [cursor=pointer]':
+              - generic [ref=f8e197]:
+                - generic [ref=f8e198]: "Sort By:"
+                - generic [ref=f8e199]: Date
+              - generic [aria-hidden] [ref=f8e200]: 
+            - status [ref=f8e201]: Sort By Date
+        - status [ref=f8e202]:
+          - generic [ref=f8e203]:
+            - paragraph [ref=f8e207]: Black Friday Savings
+            - paragraph [ref=f8e210]:
+              - generic [ref=f8e211]:
+                - text: Promotional offers are not reflected in the prices shown. Call
+                - link "1-800-221-2610" [ref=f8e212] [cursor=pointer]:
+                  - /url: tel:+18002212610
+                - text: to speak with a Travel Counselor for your best available price.
+        - status [ref=f8e213]
+        - generic [ref=f8e217]:
+          - generic [ref=f8e220]:
+            - text: Sep 24
+            - generic [ref=f8e221]: 
+            - text: Oct 2, 2027
+          - generic [ref=f8e224]:
+            - generic:
+              - paragraph
+            - paragraph [ref=f8e226]: From$4,499 /pp
+          - button " Select" [ref=f8e228] [cursor=pointer]:
+            - generic [ref=f8e229]:
+              - generic [ref=f8e230]: 
+              - text: Select
+      - generic [ref=f8e233]:
+        - heading "Itinerary" [level=2] [ref=f8e234]
+        - generic [ref=f8e235]:
+          - generic [ref=f8e236]:
+            - button "Travel Planning Guide" [ref=f8e238] [cursor=pointer]
+            - button "Print Itinerary" [ref=f8e243] [cursor=pointer]
+          - generic [ref=f8e247]:
+            - paragraph [ref=f8e248]:
+              - generic [ref=f8e249]: Departure
+              - generic [ref=f8e250]: 2027 Itinerary
+            - combobox [ref=f8e251] [cursor=pointer]:
+              - generic [ref=f8e252]:
+                - generic [ref=f8e253]: Direction
+                - generic:
+                  - generic:
+                    - generic: Amsterdam
+                    - generic: to
+                    - generic: Frankfurt
+        - generic [ref=f8e256]:
+          - generic [ref=f8e259]:
+            - heading "Depart" [level=3] [ref=f8e261]
+            - heading "Day 1Depart U.S." [level=4] [ref=f8e267]
+          - generic [ref=f8e270]:
+            - generic [ref=f8e271]:
+              - heading "Amsterdam" [level=3] [ref=f8e272]
+              - paragraph [ref=f8e276]:
+                - generic [ref=f8e277]: "Hotel:"
+                - button "M/S River Aria" [ref=f8e278] [cursor=pointer]
+                - generic [ref=f8e279]: (or similar)
+            - generic [ref=f8e280]:
+              - generic [ref=f8e281]:
+                - generic [ref=f8e282]:
+                  - generic [ref=f8e284]:
+                    - heading "Day 2Arrive in Amsterdam, the Netherlands • Embark ship" [level=4] [ref=f8e285]
+                    - paragraph [ref=f8e286]:
+                      - generic [ref=f8e289]: "Meals included:"
+                      - text: Dinner
+                  - button "View Daily Itinerary" [ref=f8e290] [cursor=pointer]
+                - button "View Daily Itinerary" [ref=f8e291] [cursor=pointer]:
+                  - img "Alt Text from API" [ref=f8e293]
+              - generic [ref=f8e294]:
+                - generic [ref=f8e295]:
+                  - generic [ref=f8e297]:
+                    - heading "Day 3Explore Amsterdam • Captain's Welcome Dinner" [level=4] [ref=f8e298]
+                    - paragraph [ref=f8e299]:
+                      - generic [ref=f8e302]: "Meals included:"
+                      - text: Breakfast, Lunch, Dinner
+                  - button "View Daily Itinerary" [ref=f8e303] [cursor=pointer]
+                - button "View Daily Itinerary" [ref=f8e304] [cursor=pointer]:
+                  - img "Alt Text from API" [ref=f8e306]
+          - generic [ref=f8e309]:
+            - generic [ref=f8e310]:
+              - heading "Arnhem" [level=3] [ref=f8e311]
+              - paragraph [ref=f8e315]:
+                - generic [ref=f8e316]: "Hotel:"
+                - button "M/S River Aria" [ref=f8e317] [cursor=pointer]
+                - generic [ref=f8e318]: (or similar)
+            - generic [ref=f8e320]:
+              - generic [ref=f8e321]:
+                - generic [ref=f8e323]:
+                  - heading "Day 4Discover Arnhem" [level=4] [ref=f8e324]
+                  - paragraph [ref=f8e325]:
+                    - generic [ref=f8e328]: "Meals included:"
+                    - text: Breakfast, Lunch, Dinner
+                - button "View Daily Itinerary" [ref=f8e329] [cursor=pointer]
+              - button "View Daily Itinerary" [ref=f8e330] [cursor=pointer]:
+                - img "Alt Text from API" [ref=f8e332]
+          - button "Show All Days" [ref=f8e334] [cursor=pointer]
+      - region "Reviews" [ref=f8e339]:
+        - heading "Reviews" [level=2] [ref=f8e340]
+        - paragraph [ref=f8e342]: No reviews yetRatings will appear here once travellers share feedback
+  - contentinfo [ref=f8e344]:
+    - generic [ref=f8e345]:
+      - generic [ref=f8e346]:
+        - generic [ref=f8e347]:
+          - region "Get top deals, the latest news, and more" [ref=f8e349]:
+            - heading "Get top deals, the latest news, and more" [level=2] [ref=f8e350]
+            - generic [ref=f8e353]:
+              - textbox "Email Address" [ref=f8e355]
+              - button "Sign-Up" [ref=f8e356] [cursor=pointer]
+          - generic [ref=f8e357]:
+            - heading "Travel Counselors" [level=2] [ref=f8e358]
+            - list [ref=f8e359]:
+              - listitem [ref=f8e360]:
+                - generic [ref=f8e361]: 
+                - link "1-800-221-2610" [ref=f8e362] [cursor=pointer]:
+                  - /url: tel:1-800-221-2610
+          - generic [ref=f8e363]:
+            - heading "Connect With Us" [level=2] [ref=f8e364]
+            - list [ref=f8e365]:
+              - listitem [ref=f8e366]:
+                - link "icon-facebook-new" [ref=f8e367] [cursor=pointer]:
+                  - /url: https://www.facebook.com/grandcircletravel
+                  - generic [ref=f8e369]:
+                    - generic [ref=f8e370]: 
+                    - text: 
+              - listitem [ref=f8e372]:
+                - link "icon-linkedin-new" [ref=f8e373] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/grand-circle-corporation/posts/
+                  - generic [ref=f8e375]:
+                    - generic [ref=f8e376]: 
+                    - text: 
+        - generic [ref=f8e378]:
+          - generic [ref=f8e379]:
+            - paragraph [ref=f8e380]: River Cruises
+            - list [ref=f8e381]:
+              - listitem [ref=f8e382]:
+                - link "Europe" [ref=f8e383] [cursor=pointer]:
+                  - /url: /tripsavailable?tt=River+Cruise&r=Europe
+              - listitem [ref=f8e385]:
+                - link "European Christmas Cruises" [ref=f8e386] [cursor=pointer]:
+                  - /url: /tripsavailable?q=Christmas+Holiday
+          - generic [ref=f8e388]:
+            - paragraph [ref=f8e389]: Land Tours
+            - list [ref=f8e390]:
+              - listitem [ref=f8e391]:
+                - link "Europe" [ref=f8e392] [cursor=pointer]:
+                  - /url: /tripsavailable?q=Europe&r=Europe&tt=Land+Tour
+              - listitem [ref=f8e394]:
+                - link "North America" [ref=f8e395] [cursor=pointer]:
+                  - /url: /tripsavailable?r=North+America&tt=Land+Tour
+              - listitem [ref=f8e397]:
+                - link "South Pacific" [ref=f8e398] [cursor=pointer]:
+                  - /url: /tripsavailable?r=South+Pacific&tt=Land+Tour
+          - generic [ref=f8e400]:
+            - paragraph [ref=f8e401]: Grand Circle Difference
+            - list [ref=f8e402]:
+              - listitem [ref=f8e403]:
+                - link "Special Offers" [ref=f8e404] [cursor=pointer]:
+                  - /url: /special-offers
+              - listitem [ref=f8e406]:
+                - link "Best Price Guarantee" [ref=f8e407] [cursor=pointer]:
+                  - /url: /ways-to-save/best-price-guarantee
+              - listitem [ref=f8e409]:
+                - link "Refer and Earn" [ref=f8e410] [cursor=pointer]:
+                  - /url: /ways-to-save/refer-and-earn
+              - listitem [ref=f8e412]:
+                - link "Travel Protection Plan" [ref=f8e413] [cursor=pointer]:
+                  - /url: /ways-to-save/travel-protection-plan
+              - listitem [ref=f8e415]:
+                - link "Solo-Friendly Travel" [ref=f8e416] [cursor=pointer]:
+                  - /url: /ways-to-save/solo-traveler
+              - listitem [ref=f8e418]:
+                - link "Group Travel Program" [ref=f8e419] [cursor=pointer]:
+                  - /url: /ways-to-save/travel-free-as-a-group-leader
+              - listitem [ref=f8e421]:
+                - link "Inner Circle" [ref=f8e422] [cursor=pointer]:
+                  - /url: /grand-circle-difference/inner-circle-club
+              - listitem [ref=f8e424]:
+                - link "Grand Circle Foundation" [ref=f8e425] [cursor=pointer]:
+                  - /url: /grand-circle-difference/grand-circle-foundation
+          - generic [ref=f8e427]:
+            - paragraph [ref=f8e428]: Contact Us
+            - list [ref=f8e429]:
+              - listitem [ref=f8e430]:
+                - link "About Us" [ref=f8e431] [cursor=pointer]:
+                  - /url: /about-us
+              - listitem [ref=f8e433]:
+                - link "Reservations & Customer Service" [ref=f8e434] [cursor=pointer]:
+                  - /url: /about-us/contact-us
+              - listitem [ref=f8e436]:
+                - link "Frequently Asked Questions" [ref=f8e437] [cursor=pointer]:
+                  - /url: /faq-home
+              - listitem [ref=f8e439]:
+                - link "People & Culture" [ref=f8e440] [cursor=pointer]:
+                  - /url: /about-us/people-and-culture
+              - listitem [ref=f8e442]:
+                - link "Career Opportunities" [ref=f8e443] [cursor=pointer]:
+                  - /url: /about-us/people-and-culture/careers?q=&o=postedDateDesc&w=&wc=&we=&wpst=
+              - listitem [ref=f8e445]:
+                - link "Media Inquires" [ref=f8e446] [cursor=pointer]:
+                  - /url: /about-us/press--media-resources
+                  - text: Media Inquiries
+              - listitem [ref=f8e448]:
+                - link "Traveler Photo Contest" [ref=f8e449] [cursor=pointer]:
+                  - /url: /community/traveler-photo-contest
+              - listitem [ref=f8e451]:
+                - link "View Digital Catalog" [ref=f8e452] [cursor=pointer]:
+                  - /url: /marketing/sem/rivers-catalog-sign-up
+              - listitem [ref=f8e454]:
+                - link "Travel Updates & Notifications" [ref=f8e455] [cursor=pointer]:
+                  - /url: /marketing/travel-updates
+      - text:       
+    - generic [ref=f8e459]:
+      - generic [ref=f8e460]:
+        - img "Image" [ref=f8e462]
+        - paragraph [ref=f8e463]: 347 Congress St. Boston, MA 02210
+        - paragraph [ref=f8e464]: © 2026 Grand Circle Travel
+        - paragraph [ref=f8e465]: Release Version 3110508222
+      - generic [ref=f8e466]:
+        - heading "Family of Brands" [level=2] [ref=f8e467]
+        - list [ref=f8e468]:
+          - listitem [ref=f8e469]:
+            - link "Overseas Adventure Travel" [ref=f8e470] [cursor=pointer]:
+              - /url: https://qa.oattravel.com/
+      - generic [ref=f8e472]:
+        - generic [ref=f8e473]:
+          - link [ref=f8e474] [cursor=pointer]:
+            - /url: https://www.bbb.org/us/ma/boston/profile/travel-agency/overseas-adventure-travel-0021-3848/accreditation-information
+            - img "Image" [ref=f8e475]
+          - link [ref=f8e476] [cursor=pointer]:
+            - /url: https://ustoa.com/grand-circle
+            - img "Image" [ref=f8e477]
+        - generic [ref=f8e478]:
+          - generic [ref=f8e479]:
+            - link "Terms & Conditions" [ref=f8e480] [cursor=pointer]:
+              - /url: /terms-and-conditions
+            - text: "|"
+          - generic [ref=f8e482]:
+            - link "Privacy Policy" [ref=f8e483] [cursor=pointer]:
+              - /url: /privacy-policy
+            - text: "|"
+          - generic [ref=f8e485]:
+            - link "Your California and Other State Privacy Rights" [ref=f8e486] [cursor=pointer]:
+              - /url: /state-privacy-rights
+            - text: "|"
+          - generic [ref=f8e488]:
+            - link "California Notice at Collection" [ref=f8e489] [cursor=pointer]:
+              - /url: /notice-at-collection
+            - text: "|"
+          - generic [ref=f8e491]:
+            - link "Terms of Use" [ref=f8e492] [cursor=pointer]:
+              - /url: /terms-of-use
+            - text: "|"
+          - generic [ref=f8e494]:
+            - link "Medical Issues & Disabilities" [ref=f8e495] [cursor=pointer]:
+              - /url: /terms-and-conditions#meddicalissues
+            - text: "|"
+          - 'link "CST # 2041626-20" [ref=f8e498] [cursor=pointer]':
+            - /url: /terms-and-conditions#mts
+  - alert [ref=f8e500]
+  - iframe
